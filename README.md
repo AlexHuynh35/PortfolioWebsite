@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Alex Huynh's Portfolio Website
 
-## Getting Started
+This is the source code repository for my personal portfolio website. This site serves as a central hub to showcase my work in **Software Engineering**, **Game Development**, and **Data Science**, highlighting projects that span my diverse technical interests and creative endeavors.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### About Page
+- A professional overview including:
+  - Profile picture and short bio
+  - Summary of technical experience
+  - Personal interests and background
+  - Highlights of selected projects
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Project Listing Page
+- A comprehensive, searchable, and filterable list of all past and current projects
+- Includes:
+  - **Search Bar**: by project title or description
+  - **Filter Options**: by project type (Software Engineering, Game Development, Data Science)
+  - **Sorting Controls**: by date (newest/oldest) or name (A–Z/Z–A)
+  - **Project Preview**:
+    - Title and image
+    - Project type
+    - Short description
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Individual Project Pages
+- Each project preview links to its own dedicated page with:
+  - **Software Engineering Projects**:
+    - Screenshots and/or video demo
+    - Links to live site and GitHub repo
+  - **Game Development Projects**:
+    - Playable demo
+    - Link to Itch.io page
+  - **Data Science Projects**:
+    - Slide deck and/or dashboard
+    - One-page summary
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Category            | Tools / Frameworks                                 |
+|---------------------|----------------------------------------------------|
+| **Frontend**        | React, TypeScript, TailwindCSS                     |
+| **Build Tools**     | Next.js                                            |
+| **Deployment**      | Vercel                                             |
+| **Version Control** | Git + GitHub                                       |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Design Notes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Color Palette**:  
+  A clean and modern palette for readability and creativity:
+  - Primary: `#1f2937` (Slate Gray)
+  - Accents:
+    - Software Engineering: `#6366F1` (Indigo)
+    - Game Development: `#F43F5E` (Rose)
+    - Data Science: `#10b981` (Emerald)
+  - Background: `#f9fafb` (Off White)
+  - Text: `#111827` (Charcoal Black)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Typography**:
+  - Header: Bold, modern sans-serif (e.g., Inter, Montserrat)
+  - Body: Clean and legible serif or sans-serif (e.g., Lato, Roboto)
+
+- **Mobile Friendliness**:
+  - Fully responsive with mobile-first design
+  - Optimized layout for smaller screens: collapsible nav, stacked content blocks
+
+- **Interactivity**:
+  - Smooth page transitions and hover effects
+  - Accessible with semantic HTML and keyboard navigation
+
+---
+
+## Planned Future Additions
+
+- **Blog Section**
+  - Devlog-style posts announcing game builds, demos, and releases
+  - Reflections on project challenges, lessons learned, and future plans
+
+- **Contact Form / Email Integration**
+  - Let users easily reach out for collaborations or freelance opportunities
+
+- **Advanced Filtering**
+  - Tag-based filtering (e.g., Python, Unity, Tableau) across all project types
+
+---
+
+## Status
+
+**Actively in development**
+- First release targeted: September 1st, 2025
+- Check back for live demo and updates!
