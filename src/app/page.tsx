@@ -13,7 +13,7 @@ export default function Home() {
         <ProjectCard
           title="Title"
           description="Description"
-          types={["game", "game"]}
+          types={["game"]}
         />
       </div>
     </section>
