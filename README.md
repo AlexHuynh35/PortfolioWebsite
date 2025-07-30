@@ -1,5 +1,7 @@
 # Alex Huynh's Portfolio Website
 
+## Project Summary
+
 This is the source code repository for my personal portfolio website. This site serves as a central hub to showcase my work in **Software Engineering**, **Game Development**, and **Data Science**, highlighting projects that span my diverse technical interests and creative endeavors.
 
 ---
@@ -75,7 +77,7 @@ This is the source code repository for my personal portfolio website. This site 
 
 ---
 
-## Planned Future Additions
+## Future Additions
 
 - **Blog Section**
   - Devlog-style posts announcing game builds, demos, and releases
