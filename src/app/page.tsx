@@ -1,20 +1,11 @@
-import { ProjectCard } from "@/components";
+import { ProjectGallery } from "@/components";
+import { projects } from "@/data/projects";
 
 export default function Home() {
   return (
     <section className="p-6">
-      <div className="max-w-4xl mx-auto text-center px-4 py-12">
-        <ProjectCard
-          title="Title"
-          description="Description"
-          types={["data", "software"]}
-        />
-
-        <ProjectCard
-          title="Title"
-          description="Description"
-          types={["game"]}
-        />
+      <div className="max-w-6xl mx-auto text-center px-4 py-12">
+        <ProjectGallery projectList={projects} />
       </div>
     </section>
   );
