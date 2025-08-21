@@ -3,11 +3,17 @@
 :root {
   --background: #171717;
   --foreground: #ededed;
+  --parchment: #EADCA6;
+  --darkbrown: #4B2E2E;
+  --gold: #C9A227;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-parchment: var(--parchment);
+  --color-darkbrown: var(--darkbrown);
+  --color-gold: var(--gold);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
