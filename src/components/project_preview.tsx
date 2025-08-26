@@ -20,7 +20,7 @@ export default function ProjectCard({ title, description, types, variant }: Proj
   const typePosDown = variant === "A" ? "-bottom-2 -right-2" : "bottom-3 right-2";
 
   return (
-    <div className="relative w-99/100 aspect-[5/6]">
+    <div className="relative w-90 aspect-[5/6] hover:scale-105">
       <div className={`absolute w-3/20 h-1/8 ${typePosUp} ${typeToColor[types[0]]} rounded-full z-10`} />
 
       {types[1] ? (
@@ -38,8 +38,8 @@ export default function ProjectCard({ title, description, types, variant }: Proj
       )}
 
       <div className={`relative w-full h-full bg-white shadow-lg p-4 ${clipPath}`}>
-        <h3 className="text-xl font-semibold mt-10">{title}</h3>
-        <p className="text-md mt-2 text-gray-600">{description}</p>
+        <h3 className="text-3xl font-semibold mt-10">{title}</h3>
+        <p className="text-xl mt-2 text-gray-600">{description}</p>
       </div>
     </div>
   );
