@@ -12,6 +12,7 @@ export default function ProjectGallery({ projectList }: ProjectGalleryProps) {
         <ProjectCard
           key={idx}
           title={project.title}
+          link={project.link}
           description={project.description}
           types={project.types}
           variant={idx % 2 === 0 ? "A" : "B"}

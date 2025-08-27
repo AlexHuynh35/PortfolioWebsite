@@ -11,7 +11,7 @@ export default function Sidebar() {
       {/* Arrow Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-4 z-50 left-0 group transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-48" : "-translate-x-16"}`}
+        className={`fixed bottom-20 z-50 left-0 group transform transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-48" : "-translate-x-16"}`}
       >
         <div className="relative w-24 h-24 hover:scale-105">
           <div className="absolute inset-0 bg-slate-700 shadow-[0_4px_0_rgba(0,0,0,0.5)] [clip-path:polygon(0_0,75%_0,100%_50%,75%_100%,0_100%)]" />
