@@ -42,8 +42,8 @@ export default function ProjectCard({ title, description, link, types, variant }
         )}
 
         <div className={`relative w-full h-full bg-white shadow-lg p-4 ${clipPath}`}>
-          <h3 className="text-3xl font-semibold mt-10">{title}</h3>
-          <p className="text-xl mt-2 text-gray-600">{description}</p>
+          <h3 className="text-3xl font-orbitron font-semibold mt-10">{title}</h3>
+          <p className="text-xl mt-2 font-rajdhani text-gray-600">{description}</p>
         </div>
       </Link>
     </div>

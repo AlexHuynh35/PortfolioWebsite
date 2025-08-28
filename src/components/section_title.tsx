@@ -16,7 +16,7 @@ export default function SectionTitle({ title, variant, proportion }: SectionTitl
     <div className={`relative max-w-7xl mx-auto ${height} text-center mt-10 mb-20`}>
       <div className={`absolute inset-0 -m-[10px] bg-gold ${clipPath} -z-10`} />
       <div className={`absolute inset-0 bg-parchment ${clipPath} shadow-md flex items-center justify-center px-8`}>
-        <h2 className={`${textSize} text-darkbrown font-bold tracking-wide`}>
+        <h2 className={`${textSize} text-darkbrown font-orbitron font-bold tracking-wide`}>
           {title}
         </h2>
       </div>

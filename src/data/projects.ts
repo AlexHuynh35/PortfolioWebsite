@@ -17,7 +17,7 @@ export const projects: Project[] = [
   {
     title: "Fruit Ninja Demake",
     description: "A retro roguelike built with Construct 3.",
-    link: "/project/fruit_ninja_remake",
+    link: "/project/fruit_ninja_demake",
     types: ['game'],
   },
   {

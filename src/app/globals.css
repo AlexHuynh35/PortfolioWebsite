@@ -14,8 +14,8 @@
   --color-parchment: var(--parchment);
   --color-darkbrown: var(--darkbrown);
   --color-gold: var(--gold);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-orbitron: var(--font-orbitron);
+  --font-rajdhani: var(--font-rajdhani);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -4,7 +4,7 @@ import { projects } from "@/data/projects";
 export default function FroggerRemake() {
   return (
     <section className="p-6">
-      <BottomBar />
+      <BottomBar type="game" />
     </section>
   );
 }
