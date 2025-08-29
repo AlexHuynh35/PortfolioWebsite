@@ -18,8 +18,8 @@ export default function BottomBar({ type }: BottomBarProps) {
       <div className={`absolute bottom-0 left-0 right-0 h-14 ${foreground} [clip-path:polygon(0_10%,100%_20%,100%_100%,0_100%)] -z-10`} />
       <nav className="flex flex-col text-center justify-center">
         <div className="relative left-10 bottom-10 w-64 hover:scale-105">
-          <div className="absolute inset-0 bg-slate-400 shadow-[0_4px_0_rgba(0,0,0,0.5)] [clip-path:polygon(0_50%,10%_10%,100%_15%,90%_90%,10%_95%)]" />
-          <Link href="/" className="block bg-slate-300 m-1 py-8 px-4 font-orbitron text-xl text-black transform -translate-y-1 transition-transform active:translate-y-0 [clip-path:polygon(0_50%,10%_10%,100%_15%,90%_90%,10%_95%)]">Project Dex</Link>
+          <div className="absolute inset-0 bg-slate-300 shadow-[0_4px_0_rgba(0,0,0,0.5)] [clip-path:polygon(0_50%,10%_10%,100%_15%,90%_90%,10%_95%)]" />
+          <Link href="/" className="block bg-slate-200 m-1 py-8 px-4 font-orbitron text-xl text-black transform -translate-y-1 transition-transform active:translate-y-0 [clip-path:polygon(0_50%,10%_10%,100%_15%,90%_90%,10%_95%)]">Project Dex</Link>
         </div>
       </nav>
     </footer>
