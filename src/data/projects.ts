@@ -1,35 +1,85 @@
-type ProjectType = 'software' | 'game' | 'data';
+type ProjectType = "software" | "game" | "data";
 
-export type Project = {
+export interface Project {
+  slug: string;
   title: string;
   description: string;
-  link: string;
+  contributors: string[];
   types: ProjectType[];
+  videoUrl?: string;
+  interactiveUrl?: string;
+  images?: string[];
 };
 
 export const projects: Project[] = [
   {
+    slug: "frogger_remake",
     title: "Frogger Remake",
-    description: "A web app that suggests games based on player preferences.",
-    link: "/project/frogger_remake",
-    types: ['data', 'software'],
+    description: "Desc",
+    contributors: [],
+    types: ["game", "software"],
+    videoUrl: undefined,
+    interactiveUrl: undefined,
+    images: [],
   },
   {
+    slug: "fruit_ninja_demake",
     title: "Fruit Ninja Demake",
-    description: "A retro roguelike built with Construct 3.",
-    link: "/project/fruit_ninja_demake",
-    types: ['game'],
+    description: "Desc",
+    contributors: [],
+    types: ["game", "software"],
+    videoUrl: undefined,
+    interactiveUrl: undefined,
+    images: [],
   },
   {
-    title: "Movie Insights",
-    description: "An exploratory data analysis of profitability trends in film.",
-    link: "",
-    types: ['data'],
+    slug: "laboratory",
+    title: "LaboRATory",
+    description: "Desc",
+    contributors: [],
+    types: ["game"],
+    videoUrl: undefined,
+    interactiveUrl: undefined,
+    images: [],
   },
   {
-    title: "AI Review Summarizer",
-    description: "Summarizes game reviews using generative AI.",
-    link: "",
-    types: ['data', 'software'],
+    slug: "subscription_campaign_optimization",
+    title: "Subscription Campaign Optimization",
+    description: "Desc",
+    contributors: [],
+    types: ["data"],
+    videoUrl: undefined,
+    interactiveUrl: undefined,
+    images: [],
+  },
+  {
+    slug: "box_office_profitability",
+    title: "Box Office Profitability",
+    description: "Desc",
+    contributors: [],
+    types: ["data"],
+    videoUrl: undefined,
+    interactiveUrl: undefined,
+    images: [],
+  },
+  {
+    slug: "predicting_emotions_with_gru",
+    title: "Predicting Emotions with GRU",
+    description: "Desc",
+    contributors: [],
+    types: ["data", "software"],
+    videoUrl: undefined,
+    interactiveUrl: undefined,
+    images: [],
+  },
+  {
+    slug: "angklung_educational_website",
+    title: "Angklung Educational Website",
+    description: "Desc",
+    contributors: [],
+    types: ["software"],
+    videoUrl: undefined,
+    interactiveUrl: undefined,
+    images: [],
   },
 ];

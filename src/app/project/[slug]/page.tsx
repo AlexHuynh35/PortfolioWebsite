@@ -1,0 +1,26 @@
+import { BottomBar, SectionTitle } from "@/components";
+import { projects } from "@/data/projects";
+
+type ProjectPageProps = {
+  params: Promise<{ slug: string }>;
+};
+
+export default async function Project({ params }: ProjectPageProps) {
+  const { slug } = await params;
+
+  const project = projects.find((p) => p.slug === slug);
+
+  if (!project) {
+    return <div className="p-8">Project not found</div>;
+  }
+
+  return (
+    <section className="p-6">
+      <div className="p-8 space-y-6">
+        <SectionTitle title={project.title} variant="B" proportion={1} />
+        
+        <BottomBar type={project.types[0]} />
+      </div>
+    </section>
+  );
+}

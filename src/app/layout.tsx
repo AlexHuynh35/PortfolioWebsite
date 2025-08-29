@@ -28,7 +28,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${orbitron.variable} ${rajdhani.variable} antialiased`}>
-        <Sidebar />
         {children}
       </body>
     </html>

@@ -4,9 +4,9 @@ type ProjectType = 'software' | 'game' | 'data';
 type QuadVariant = 'A' | 'B';
 
 type ProjectCardProps = {
+  slug: string;
   title: string;
   description: string;
-  link: string;
   types: ProjectType[];
   variant: QuadVariant;
 };
@@ -17,14 +17,14 @@ const typeToColor = {
   game: "bg-rose-500",
 };
 
-export default function ProjectCard({ title, description, link, types, variant }: ProjectCardProps) {
+export default function ProjectCard({ slug, title, description, types, variant }: ProjectCardProps) {
   const clipPath = variant === "A" ? "[clip-path:polygon(5%_5%,95%_0,100%_100%,0_95%)]" : "[clip-path:polygon(0_0,100%_5%,95%_95%,5%_100%)]";
   const typePosUp = variant === "A" ? "top-3 left-2" : "-top-2 -left-2";
   const typePosDown = variant === "A" ? "-bottom-2 -right-2" : "bottom-3 right-2";
 
   return (
     <div className="relative w-90 aspect-[5/6] hover:scale-105">
-      <Link href={link}>
+      <Link href={`/project/${slug}`}>
         <div className={`absolute w-3/20 h-1/8 ${typePosUp} ${typeToColor[types[0]]} rounded-full z-10`} />
 
         {types[1] ? (

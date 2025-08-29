@@ -11,8 +11,8 @@ export default function ProjectGallery({ projectList }: ProjectGalleryProps) {
       {projectList.map((project, idx) => (
         <ProjectCard
           key={idx}
+          slug={project.slug}
           title={project.title}
-          link={project.link}
           description={project.description}
           types={project.types}
           variant={idx % 2 === 0 ? "A" : "B"}
