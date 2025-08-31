@@ -3,3 +3,7 @@ export { default as ProjectGallery } from "./project_gallery";
 export { default as Sidebar } from "./sidebar";
 export { default as BottomBar } from "./bottom_bar";
 export { default as SectionTitle } from "./section_title";
+export { default as ItchEmbed } from "./itch_embed";
+export { default as TableauEmbed } from "./tableau_embed";
+export { default as VideoViewer } from "./video_viewer";
+export { default as SlideViewer } from "./slide_viewer";
