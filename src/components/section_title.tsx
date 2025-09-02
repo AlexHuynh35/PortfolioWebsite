@@ -13,7 +13,7 @@ export default function SectionTitle({ title, variant, proportion }: SectionTitl
   const textSize = proportion === 1 ? "text-5xl" : proportion === 2 ? "text-4xl" : "text-3xl";
 
   return (
-    <div className={`relative max-w-7xl mx-auto ${height} text-center my-10`}>
+    <div className={`relative max-w-7xl mx-auto ${height} text-center my-15`}>
       <div className={`absolute inset-0 -m-[10px] bg-gold ${clipPath} -z-10`} />
       <div className={`absolute inset-0 bg-parchment ${clipPath} shadow-md flex items-center justify-center px-8`}>
         <h2 className={`${textSize} text-darkbrown font-orbitron font-bold tracking-wide`}>
