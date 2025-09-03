@@ -16,11 +16,9 @@ export default async function Project({ params }: ProjectPageProps) {
 
   return (
     <section className="p-6">
-      <div className="p-8 space-y-6">
-        <SectionTitle title={project.title} variant="B" proportion={1} />
-        
-        <BottomBar type={project.types[0]} />
-      </div>
+      <SectionTitle title={project.title} variant="A" proportion={1} type={project.types[0]} />
+
+      <BottomBar type={project.types[1] ? project.types[1] : project.types[0]} />
     </section>
   );
 }

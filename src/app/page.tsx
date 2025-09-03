@@ -42,7 +42,7 @@ export default function Home() {
     <section className="p-6">
       <Sidebar />
 
-      <SectionTitle title="Project Dex" variant="B" proportion={1} />
+      <SectionTitle title="Project Dex" variant="B" proportion={1} type="main" />
 
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-10 my-15">
         <div className="relative w-4/5 h-20">

@@ -67,12 +67,12 @@ export default function ProjectCard({ slug, title, description, types, variant }
           </div>
         )}
 
-        <div className={`absolute inset-0 -translate-x-2 -translate-y-2 ${typeToColor[types[0]]} rounded-xl ${clipPath} -z-10`} />
+        <div className={`absolute inset-0 -translate-x-2 -translate-y-2 ${typeToColor[types[0]]} ${clipPath} -z-10`} />
 
         {types[1] ? (
-          <div className={`absolute inset-0 translate-x-2 translate-y-2 ${typeToColor[types[1]]} rounded-xl ${clipPath} -z-20`} />
+          <div className={`absolute inset-0 translate-x-2 translate-y-2 ${typeToColor[types[1]]} ${clipPath} -z-20`} />
         ) : (
-          <div className={`absolute inset-0 translate-x-2 translate-y-2 ${typeToColor[types[0]]} rounded-xl ${clipPath} -z-20`} />
+          <div className={`absolute inset-0 translate-x-2 translate-y-2 ${typeToColor[types[0]]} ${clipPath} -z-20`} />
         )}
 
         <div className={`relative w-full h-full bg-slate-200 shadow-lg p-4 flex flex-col text-center justify-center ${clipPath}`}>
