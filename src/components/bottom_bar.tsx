@@ -19,7 +19,7 @@ export default function BottomBar({ type }: BottomBarProps) {
       <nav className="flex flex-col text-center justify-center">
         <div className="relative left-10 bottom-10 w-64">
           <div className="absolute inset-0 bg-slate-300 shadow-[0_4px_0_rgba(0,0,0,0.5)] [clip-path:polygon(0_50%,10%_10%,100%_15%,90%_90%,10%_95%)]" />
-          <Link href="/" className="block bg-slate-200 hover:bg-slate-100 m-1 py-8 px-4 font-orbitron text-xl text-black transform -translate-y-1 transition-transform active:translate-y-0 [clip-path:polygon(0_50%,10%_10%,100%_15%,90%_90%,10%_95%)]">Project Dex</Link>
+          <Link href="/" className="block bg-slate-200 hover:bg-slate-100 m-1 py-8 px-4 font-orbitron font-bold text-xl text-black transform -translate-y-1 transition-transform active:translate-y-0 [clip-path:polygon(0_50%,10%_10%,100%_15%,90%_90%,10%_95%)]">Project Dex</Link>
         </div>
       </nav>
     </footer>

@@ -29,11 +29,11 @@ export default function Sidebar() {
         <nav className="flex flex-col text-center justify-center">
           <div className="relative w-full">
             <div className="absolute inset-0 bg-neutral-700 shadow-[0_4px_0_rgba(0,0,0,0.5)] [clip-path:polygon(0_20%,100%_0,90%_90%,0_100%)]" />
-            <Link href="/about" className="block bg-neutral-600 hover:bg-neutral-500 mr-1 mt-1 mb-1 py-8 px-4 font-orbitron text-xl transform -translate-y-1 transition-transform active:translate-y-0 [clip-path:polygon(0_20%,100%_0,90%_90%,0_100%)]">Player Profile</Link>
+            <Link href="/about" className="block bg-neutral-600 hover:bg-neutral-500 mr-1 mt-1 mb-1 py-8 px-4 font-orbitron font-bold text-xl transform -translate-y-1 transition-transform active:translate-y-0 [clip-path:polygon(0_20%,100%_0,90%_90%,0_100%)]">Player Profile</Link>
           </div>
           <div className="relative w-full">
             <div className="absolute inset-0 bg-neutral-700 shadow-[0_4px_0_rgba(0,0,0,0.5)] [clip-path:polygon(0_20%,100%_0,90%_90%,0_100%)]" />
-            <Link href="/" className="block bg-neutral-600 hover:bg-neutral-500 mr-1 mt-1 mb-1 py-8 px-4 font-orbitron text-xl transform -translate-y-1 transition-transform active:translate-y-0 [clip-path:polygon(0_20%,100%_0,90%_90%,0_100%)]">Project Dex</Link>
+            <Link href="/" className="block bg-neutral-600 hover:bg-neutral-500 mr-1 mt-1 mb-1 py-8 px-4 font-orbitron font-bold text-xl transform -translate-y-1 transition-transform active:translate-y-0 [clip-path:polygon(0_20%,100%_0,90%_90%,0_100%)]">Project Dex</Link>
           </div>
         </nav>
       </aside>

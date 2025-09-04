@@ -1,4 +1,4 @@
-import { BottomBar, SectionTitle } from "@/components";
+import { BottomBar, SectionTitle, ProjectDescription } from "@/components";
 import { projects } from "@/data/projects";
 
 type ProjectPageProps = {
@@ -17,6 +17,10 @@ export default async function Project({ params }: ProjectPageProps) {
   return (
     <section className="p-6">
       <SectionTitle title={project.title} variant="A" proportion={1} type={project.types[0]} />
+
+      <ProjectDescription description={project.description} collaborators={[]} tools={[]} />
+
+      <div className="py-15" />
 
       <BottomBar type={project.types[1] ? project.types[1] : project.types[0]} />
     </section>
