@@ -15,6 +15,7 @@ export default function ProjectGallery({ projectList }: ProjectGalleryProps) {
           title={project.title}
           description={project.description}
           types={project.types}
+          collaborators={project.collaborators.length}
           variant={idx % 2 === 0 ? "A" : "B"}
         />
       ))}

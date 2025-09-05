@@ -4,7 +4,7 @@ export interface Project {
   slug: string;
   title: string;
   description: string;
-  contributors: string[];
+  collaborators: string[];
   types: ProjectType[];
   videoUrl?: string;
   interactiveUrl?: string;
@@ -16,7 +16,7 @@ export const projects: Project[] = [
     slug: "frogger_remake",
     title: "Frogger Remake",
     description: "Desc",
-    contributors: [],
+    collaborators: ["Summit Pradhan"],
     types: ["game", "software"],
     videoUrl: undefined,
     interactiveUrl: undefined,
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     slug: "fruit_ninja_demake",
     title: "Fruit Ninja Demake",
     description: "Desc",
-    contributors: [],
+    collaborators: ["Summit Pradhan"],
     types: ["game", "software"],
     videoUrl: undefined,
     interactiveUrl: undefined,
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     slug: "laboratory",
     title: "LaboRATory",
     description: "Desc",
-    contributors: [],
+    collaborators: ["Chris Guerrero"],
     types: ["game"],
     videoUrl: undefined,
     interactiveUrl: undefined,
@@ -46,7 +46,7 @@ export const projects: Project[] = [
     slug: "subscription_campaign_optimization",
     title: "Subscription Campaign Optimization",
     description: "Desc",
-    contributors: [],
+    collaborators: ["Ronald Catahimican", "Kaila Li"],
     types: ["data"],
     videoUrl: undefined,
     interactiveUrl: undefined,
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     slug: "box_office_profitability",
     title: "Box Office Profitability",
     description: "Desc",
-    contributors: [],
+    collaborators: ["Ronald Catahimican", "Kaila Li"],
     types: ["data"],
     videoUrl: undefined,
     interactiveUrl: undefined,
@@ -66,7 +66,7 @@ export const projects: Project[] = [
     slug: "predicting_emotions_with_gru",
     title: "Predicting Emotions with GRU",
     description: "Desc",
-    contributors: [],
+    collaborators: ["Branley Mmasi"],
     types: ["data", "software"],
     videoUrl: undefined,
     interactiveUrl: undefined,
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     slug: "angklung_educational_website",
     title: "Angklung Educational Website",
     description: "Desc",
-    contributors: [],
+    collaborators: [],
     types: ["software"],
     videoUrl: undefined,
     interactiveUrl: undefined,

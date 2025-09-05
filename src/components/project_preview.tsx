@@ -9,6 +9,7 @@ type ProjectCardProps = {
   title: string;
   description: string;
   types: ProjectType[];
+  collaborators: number;
   variant: QuadVariant;
 };
 
@@ -30,14 +31,26 @@ const typeToPadding = {
   game: "p-2",
 };
 
-export default function ProjectCard({ slug, title, description, types, variant }: ProjectCardProps) {
+export default function ProjectCard({ slug, title, description, types, collaborators, variant }: ProjectCardProps) {
   const clipPath = variant === "A" ? "[clip-path:polygon(5%_5%,95%_0,100%_100%,0_95%)]" : "[clip-path:polygon(0_0,100%_5%,95%_95%,5%_100%)]";
   const typePosUp = variant === "A" ? "top-6 left-5" : "top-2.5 left-2.5";
   const typePosDown = variant === "A" ? "bottom-2.5 right-2.5" : "bottom-6 right-5";
+  const typePosCollab = variant === "A" ? "top-2 right-5" : "top-5 right-2";
 
   return (
     <div className="relative w-70 aspect-[5/6] hover:scale-105">
       <Link href={`/project/${slug}`}>
+        {collaborators != 0 && (
+          <div className={`absolute w-1/7 h-5/42 ${typePosCollab} rounded-full z-10`}>
+            <Image
+              src="/collaborate.png"
+              alt="collaborate"
+              fill
+              className="object-contain"
+            />
+          </div>
+        )}
+
         <div className={`absolute w-1/5 h-1/6 ${typePosUp} ${typeToColor[types[0]]} rounded-full z-10`}>
           <Image
             src={typeToImage[types[0]]}
