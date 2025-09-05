@@ -11,7 +11,7 @@ export default function Sidebar() {
       {/* Arrow Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-20 z-30 left-0 group -translate-x-8"
+        className="lg:hidden fixed top-20 z-30 left-0 group -translate-x-8"
       >
         <div className="relative w-24 h-24">
           <div className="absolute inset-0 bg-neutral-700 shadow-[0_4px_0_rgba(0,0,0,0.5)] [clip-path:polygon(0_0,75%_0,100%_50%,75%_100%,0_100%)]" />
@@ -20,7 +20,7 @@ export default function Sidebar() {
       </button>
 
       {/* Sidebar */}
-      <aside className={`fixed top-0 left-0 h-full w-64 text-white transform transition-transform duration-300 ease-in-out z-40 ${isOpen ? "translate-x-0" : "-translate-x-full"} md:block`}>
+      <aside className={`fixed top-0 left-0 h-full w-64 text-white transform transition-transform duration-300 ease-in-out z-40 ${isOpen ? "translate-x-0" : "-translate-x-full lg:translate-x-0"} md:block`}>
         <div className="absolute w-60 inset-0 bg-neutral-900 [clip-path:polygon(0_0,100%_0,80%_100%,0_100%)] -z-20" />
         <div className="absolute w-58 inset-0 bg-neutral-800 [clip-path:polygon(0_0,100%_0,80%_100%,0_100%)] -z-10" />
         <div className="absolute w-60 inset-0 bg-neutral-900 [clip-path:polygon(0_85%,100%_75%,95%_100%,0_100%)] -z-20" />
@@ -41,7 +41,7 @@ export default function Sidebar() {
       {/* Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-white/30 backdrop-blur-md z-30"
+          className="lg:hidden fixed inset-0 bg-white/30 backdrop-blur-md z-30"
           onClick={() => setIsOpen(false)}
         />
       )}

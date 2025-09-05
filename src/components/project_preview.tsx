@@ -32,11 +32,11 @@ const typeToPadding = {
 
 export default function ProjectCard({ slug, title, description, types, variant }: ProjectCardProps) {
   const clipPath = variant === "A" ? "[clip-path:polygon(5%_5%,95%_0,100%_100%,0_95%)]" : "[clip-path:polygon(0_0,100%_5%,95%_95%,5%_100%)]";
-  const typePosUp = variant === "A" ? "top-7 left-6" : "top-2 left-2";
-  const typePosDown = variant === "A" ? "bottom-2 right-2" : "bottom-7 right-6";
+  const typePosUp = variant === "A" ? "top-6 left-5" : "top-2.5 left-2.5";
+  const typePosDown = variant === "A" ? "bottom-2.5 right-2.5" : "bottom-6 right-5";
 
   return (
-    <div className="relative w-90 aspect-[5/6] hover:scale-105">
+    <div className="relative w-70 aspect-[5/6] hover:scale-105">
       <Link href={`/project/${slug}`}>
         <div className={`absolute w-1/5 h-1/6 ${typePosUp} ${typeToColor[types[0]]} rounded-full z-10`}>
           <Image

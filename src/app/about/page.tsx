@@ -3,7 +3,7 @@ import { Sidebar, SectionTitle } from "@/components";
 
 export default function About() {
   return (
-    <section className="p-6">
+    <section className="p-6 lg:pl-64">
       <Sidebar />
 
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row-reverse justify-center items-center gap-30">
