@@ -8,6 +8,7 @@ export interface Project {
   types: ProjectType[];
   videoUrl?: string;
   interactiveUrl?: string;
+  otherUrls: string[]
   images?: string[];
 };
 
@@ -19,7 +20,8 @@ export const projects: Project[] = [
     collaborators: ["Summit Pradhan"],
     types: ["game", "software"],
     videoUrl: undefined,
-    interactiveUrl: undefined,
+    interactiveUrl: "https://itch.io/embed-upload/13681337?color=333333&autoplay=0",
+    otherUrls: ["https://humanbean35.itch.io/frogger-remake"],
     images: [],
   },
   {
@@ -29,7 +31,8 @@ export const projects: Project[] = [
     collaborators: ["Summit Pradhan"],
     types: ["game", "software"],
     videoUrl: undefined,
-    interactiveUrl: undefined,
+    interactiveUrl: "https://itch.io/embed-upload/13840436?color=333333&autoplay=0",
+    otherUrls: ["https://humanbean35.itch.io/fruit-ninja-demake"],
     images: [],
   },
   {
@@ -39,7 +42,8 @@ export const projects: Project[] = [
     collaborators: ["Chris Guerrero"],
     types: ["game"],
     videoUrl: undefined,
-    interactiveUrl: undefined,
+    interactiveUrl: "https://itch.io/embed-upload/13840698?color=333333&autoplay=0",
+    otherUrls: ["https://humanbean35.itch.io/laboratory"],
     images: [],
   },
   {
@@ -50,6 +54,7 @@ export const projects: Project[] = [
     types: ["data"],
     videoUrl: undefined,
     interactiveUrl: undefined,
+    otherUrls: [],
     images: [],
   },
   {
@@ -60,6 +65,7 @@ export const projects: Project[] = [
     types: ["data"],
     videoUrl: undefined,
     interactiveUrl: undefined,
+    otherUrls: [],
     images: [],
   },
   {
@@ -70,6 +76,7 @@ export const projects: Project[] = [
     types: ["data", "software"],
     videoUrl: undefined,
     interactiveUrl: undefined,
+    otherUrls: [],
     images: [],
   },
   {
@@ -80,6 +87,7 @@ export const projects: Project[] = [
     types: ["software"],
     videoUrl: undefined,
     interactiveUrl: undefined,
+    otherUrls: [],
     images: [],
   },
 ];

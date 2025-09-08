@@ -1,4 +1,4 @@
-import { BottomBar, SectionTitle, ProjectDescription } from "@/components";
+import { BottomBar, SectionTitle, ProjectDescription, ItchEmbed } from "@/components";
 import { projects } from "@/data/projects";
 
 type ProjectPageProps = {
@@ -19,6 +19,8 @@ export default async function Project({ params }: ProjectPageProps) {
       <SectionTitle title={project.title} variant="A" proportion={1} type={project.types[0]} />
 
       <ProjectDescription description={project.description} collaborators={[]} tools={[]} />
+
+      <ItchEmbed url={project.interactiveUrl} />
 
       <div className="py-15" />
 

@@ -26,19 +26,19 @@ export default function ProjectDescription({ description, collaborators, tools }
           {description}
         </h2>
       </div>
-      <div className="absolute hidden md:block right-90 -bottom-10 w-64 h-64">
+      <div className="absolute hidden md:block right-90 bottom-0 w-64 h-64">
         <div className="absolute inset-0 -m-[10px] bg-gold [clip-path:polygon(0_0,100%_0%,100%_100%,0_100%)] -z-20" />
         <div className="absolute inset-0 bg-parchment [clip-path:polygon(0_0,100%_0%,100%_80%,80%_100%,0_100%)] -z-10 flex items-center justify-center px-8">
           Content 1
         </div>
       </div>
-      <div className="absolute hidden md:block right-10 -bottom-10 w-64 h-64">
+      <div className="absolute hidden md:block right-10 bottom-0 w-64 h-64">
         <div className="absolute inset-0 -m-[10px] bg-gold [clip-path:polygon(0_0,100%_0%,100%_100%,0_100%)] -z-20" />
         <div className="absolute inset-0 bg-parchment [clip-path:polygon(0_0,100%_0%,100%_80%,80%_100%,0_100%)] -z-10 flex items-center justify-center px-8">
           Content 2
         </div>
       </div>
-      <div className="absolute md:hidden right-10 -bottom-10 w-64 h-64">
+      <div className="absolute md:hidden right-10 bottom-0 w-64 h-64">
         <div className="absolute inset-0 -m-[10px] bg-gold [clip-path:polygon(0_0,100%_0%,100%_100%,0_100%)] -z-20" />
         <div className="absolute inset-0 bg-parchment [clip-path:polygon(0_0,100%_0%,100%_80%,80%_100%,0_100%)] -z-10 flex items-center justify-center px-8">
           {activeBox === 0 ? "Content 1" : "Content 2"}

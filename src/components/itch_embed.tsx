@@ -1,9 +1,28 @@
+import { SectionTitle } from "@/components";
+
 type ItchEmbedProps = {
-  url: string
+  url?: string
 }
 
 export default function ItchEmbed({ url }: ItchEmbedProps) {
   return (
-    <div></div>
+    <div className="relative max-w-5xl mx-auto h-250 my-15 flex justify-center">
+      <div className="absolute left-10 -top-20 w-64 h-16 z-10">
+        <SectionTitle title="Play Here!" variant="B" proportion={3} type="main" />
+      </div>
+
+      <div className="absolute inset-0 -m-[10px] bg-slate-300 [clip-path:polygon(0_2%,100%_0%,100%_100%,0%_98%)] -z-40" />
+      <div className="absolute inset-0 bg-slate-200 [clip-path:polygon(0_2%,100%_0%,100%_100%,0%_98%)] -z-30" />
+
+      <div className="absolute inset-0 flex justify-center items-center px-8">
+        <iframe
+          src={url}
+          width="1000"
+          height="750"
+          frameBorder="0"
+          allowFullScreen
+        ></iframe>
+      </div>
+    </div>
   );
 }
