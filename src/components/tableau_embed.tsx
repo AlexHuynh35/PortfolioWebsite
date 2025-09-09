@@ -9,8 +9,8 @@ type TableauEmbedProps = {
 export default function TableauEmbed({ url, width, height }: TableauEmbedProps) {
   return (
     <div className="relative max-w-6xl mx-auto h-250 my-15 flex justify-center">
-      <div className="absolute left-10 -top-20 w-64 h-16 z-10">
-        <SectionTitle title="Dashboard" variant="A" proportion={3} type="main" />
+      <div className="absolute left-10 -top-30 w-80 h-24 z-10">
+        <SectionTitle title="Explore the Data!" variant="A" proportion={2} type="main" />
       </div>
 
       <div className="absolute inset-0 -m-[10px] bg-slate-300 [clip-path:polygon(0_0,100%_2%,98%_98%,2%_100%)] -z-40" />
@@ -23,6 +23,7 @@ export default function TableauEmbed({ url, width, height }: TableauEmbedProps) 
           height={height}
           frameBorder="0"
           allowFullScreen
+          className="border-4 border-black"
         ></iframe>
       </div>
     </div>

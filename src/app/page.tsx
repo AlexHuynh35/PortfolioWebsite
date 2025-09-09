@@ -12,9 +12,9 @@ const typeToColor = {
 };
 
 const typeToImage = {
-  data: "/data.png",
-  software: "/software.png",
-  game: "/game.png",
+  data: "/icons/data.png",
+  software: "/icons/software.png",
+  game: "/icons/game.png",
 };
 
 const typeToPadding = {
@@ -50,7 +50,7 @@ export default function Home() {
             <div className={`absolute inset-0 -m-[10px] bg-slate-300 [clip-path:polygon(5%_5%,95%_0,100%_100%,0_95%)] -z-10`} />
             <div className={`absolute inset-0 bg-slate-200 [clip-path:polygon(5%_5%,95%_0,100%_100%,0_95%)] flex flex-row items-center justify-center px-12`}>
               <Image
-                src="/search.png"
+                src="/icons/search.png"
                 alt="search"
                 width={24}
                 height={24}

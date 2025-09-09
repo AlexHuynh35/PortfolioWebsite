@@ -11,7 +11,7 @@ export default function About() {
           <div className={`absolute inset-0 -m-[10px] bg-slate-300 [clip-path:polygon(8%_8%,92%_10%,90%_90%,10%_92%)] -z-40`} />
           <div className="relative w-4/5 aspect-[5/7]">
             <Image
-              src="/portrait.jpg"
+              src="/about/portrait.jpg"
               alt="portrait"
               fill
               className="object-cover border-4 border-black -z-30"

@@ -6,9 +6,9 @@ type ItchEmbedProps = {
 
 export default function ItchEmbed({ url }: ItchEmbedProps) {
   return (
-    <div className="relative max-w-5xl mx-auto h-250 my-15 flex justify-center">
-      <div className="absolute left-10 -top-20 w-64 h-16 z-10">
-        <SectionTitle title="Play Here!" variant="A" proportion={3} type="main" />
+    <div className="relative max-w-6xl mx-auto h-250 my-15 flex justify-center">
+      <div className="absolute left-10 -top-30 w-80 h-24 z-10">
+        <SectionTitle title="Play Here!" variant="A" proportion={2} type="main" />
       </div>
 
       <div className="absolute inset-0 -m-[10px] bg-slate-300 [clip-path:polygon(0_0,100%_2%,98%_98%,2%_100%)] -z-40" />
@@ -21,6 +21,7 @@ export default function ItchEmbed({ url }: ItchEmbedProps) {
           height="750"
           frameBorder="0"
           allowFullScreen
+          className="border-4 border-black"
         ></iframe>
       </div>
     </div>

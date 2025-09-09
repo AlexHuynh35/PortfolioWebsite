@@ -48,7 +48,7 @@ export default function ProjectDescription({ description, collaborators, tools }
           className="absolute right-0 bottom-0 w-8 h-8"
         >
           <Image
-            src="/arrow.png"
+            src="/icons/arrow.png"
             alt="arrow"
             fill
             className="object-contain transform scale-y-[-1] -rotate-25 filter grayscale brightness-100 opacity-70"

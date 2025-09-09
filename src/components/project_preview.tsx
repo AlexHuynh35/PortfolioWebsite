@@ -20,9 +20,9 @@ const typeToColor = {
 };
 
 const typeToImage = {
-  data: "/data.png",
-  software: "/software.png",
-  game: "/game.png",
+  data: "/icons/data.png",
+  software: "/icons/software.png",
+  game: "/icons/game.png",
 };
 
 const typeToPadding = {
@@ -43,7 +43,7 @@ export default function ProjectCard({ slug, title, description, types, collabora
         {collaborators != 0 && (
           <div className={`absolute w-1/7 h-5/42 ${typePosCollab} rounded-full z-10`}>
             <Image
-              src="/collaborate.png"
+              src="/icons/collaborate.png"
               alt="collaborate"
               fill
               className="object-contain"
