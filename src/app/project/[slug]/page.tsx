@@ -1,4 +1,4 @@
-import { BottomBar, SectionTitle, ProjectDescription, ItchEmbed } from "@/components";
+import { BottomBar, SectionTitle, ProjectDescription, ItchEmbed, TableauEmbed } from "@/components";
 import { projects } from "@/data/projects";
 
 type ProjectPageProps = {
@@ -20,7 +20,13 @@ export default async function Project({ params }: ProjectPageProps) {
 
       <ProjectDescription description={project.description} collaborators={[]} tools={[]} />
 
-      <ItchEmbed url={project.interactiveUrl} />
+      {project.interactiveUrl && (
+        <ItchEmbed url={project.interactiveUrl} />
+      )}
+
+      {project.tableauUrl && (
+        <TableauEmbed url={project.tableauUrl?.url} width={project.tableauUrl?.width} height={project.tableauUrl?.height} />
+      )}
 
       <div className="py-15" />
 

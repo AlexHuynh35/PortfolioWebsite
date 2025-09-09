@@ -1,5 +1,11 @@
 type ProjectType = "software" | "game" | "data";
 
+type Tableau = {
+  url: string,
+  width: number,
+  height: number
+}
+
 export interface Project {
   slug: string;
   title: string;
@@ -8,6 +14,7 @@ export interface Project {
   types: ProjectType[];
   videoUrl?: string;
   interactiveUrl?: string;
+  tableauUrl?: Tableau;
   otherUrls: string[]
   images?: string[];
 };
@@ -19,7 +26,6 @@ export const projects: Project[] = [
     description: "Desc",
     collaborators: ["Summit Pradhan"],
     types: ["game", "software"],
-    videoUrl: undefined,
     interactiveUrl: "https://itch.io/embed-upload/13681337?color=333333&autoplay=0",
     otherUrls: ["https://humanbean35.itch.io/frogger-remake"],
     images: [],
@@ -30,7 +36,6 @@ export const projects: Project[] = [
     description: "Desc",
     collaborators: ["Summit Pradhan"],
     types: ["game", "software"],
-    videoUrl: undefined,
     interactiveUrl: "https://itch.io/embed-upload/13840436?color=333333&autoplay=0",
     otherUrls: ["https://humanbean35.itch.io/fruit-ninja-demake"],
     images: [],
@@ -41,7 +46,6 @@ export const projects: Project[] = [
     description: "Desc",
     collaborators: ["Chris Guerrero"],
     types: ["game"],
-    videoUrl: undefined,
     interactiveUrl: "https://itch.io/embed-upload/13840698?color=333333&autoplay=0",
     otherUrls: ["https://humanbean35.itch.io/laboratory"],
     images: [],
@@ -52,8 +56,11 @@ export const projects: Project[] = [
     description: "Desc",
     collaborators: ["Ronald Catahimican", "Kaila Li"],
     types: ["data"],
-    videoUrl: undefined,
-    interactiveUrl: undefined,
+    tableauUrl: {
+      url: "https://public.tableau.com/views/CreativeStrategyCampaignResults/CreativeStrategyDashboard?:showVizHome=no&:embed=true",
+      width: 800,
+      height: 627
+    },
     otherUrls: [],
     images: [],
   },
@@ -63,8 +70,11 @@ export const projects: Project[] = [
     description: "Desc",
     collaborators: ["Ronald Catahimican", "Kaila Li"],
     types: ["data"],
-    videoUrl: undefined,
-    interactiveUrl: undefined,
+    tableauUrl: {
+      url: "https://public.tableau.com/views/BoxOfficePerformance_17432301568260/BOPBudgetAnalysis?:showVizHome=no&:embed=true",
+      width: 1024,
+      height: 795
+    },
     otherUrls: [],
     images: [],
   },
@@ -74,8 +84,6 @@ export const projects: Project[] = [
     description: "Desc",
     collaborators: ["Branley Mmasi"],
     types: ["data", "software"],
-    videoUrl: undefined,
-    interactiveUrl: undefined,
     otherUrls: [],
     images: [],
   },
@@ -85,8 +93,6 @@ export const projects: Project[] = [
     description: "Desc",
     collaborators: [],
     types: ["software"],
-    videoUrl: undefined,
-    interactiveUrl: undefined,
     otherUrls: [],
     images: [],
   },
