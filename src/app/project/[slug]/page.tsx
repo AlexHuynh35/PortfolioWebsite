@@ -1,4 +1,4 @@
-import { BottomBar, SectionTitle, ProjectDescription, ItchEmbed, TableauEmbed, SlideViewer } from "@/components";
+import { BottomBar, SectionTitle, ProjectDescription, MediaCarousel } from "@/components";
 import { projects } from "@/data/projects";
 
 type ProjectPageProps = {
@@ -20,17 +20,7 @@ export default async function Project({ params }: ProjectPageProps) {
 
       <ProjectDescription description={project.description} collaborators={[]} tools={[]} />
 
-      {project.itchUrl && (
-        <ItchEmbed url={project.itchUrl} />
-      )}
-
-      {project.tableauUrl && (
-        <TableauEmbed url={project.tableauUrl?.url} width={project.tableauUrl?.width} height={project.tableauUrl?.height} />
-      )}
-
-      {project.images.length != 0 && (
-        <SlideViewer urls={project.images} />
-      )}
+      <MediaCarousel itchUrl={project.itchUrl} tableauUrl={project.tableauUrl} images={project.images} />
 
       <div className="py-15" />
 
