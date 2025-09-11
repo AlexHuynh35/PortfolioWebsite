@@ -20,9 +20,9 @@ export default async function Project({ params }: ProjectPageProps) {
 
       <ProjectDescription description={project.description} collaborators={project.collaborators} links={project.otherUrls} />
 
-      <MediaCarousel itchUrl={project.itchUrl} tableauUrl={project.tableauUrl} images={project.images} />
+      <ProjectTasks contributions={project.contributions} tools={project.tools} />
 
-      <ProjectTasks contributions={project.contributions} />
+      <MediaCarousel itchUrl={project.itchUrl} tableauUrl={project.tableauUrl} images={project.images} />
 
       <div className="py-15" />
 

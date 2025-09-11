@@ -11,6 +11,7 @@ export interface Project {
   title: string;
   description: string;
   contributions: string[];
+  tools: [string, string][];
   collaborators: string[];
   types: ProjectType[];
   videoUrl?: string;
@@ -26,6 +27,7 @@ export const projects: Project[] = [
     title: "Frogger Remake",
     description: "Desc",
     contributions: [""],
+    tools: [],
     collaborators: ["Summit Pradhan"],
     types: ["game", "software"],
     itchUrl: "https://itch.io/embed-upload/13681337?color=333333&autoplay=0",
@@ -37,6 +39,7 @@ export const projects: Project[] = [
     title: "Fruit Ninja Demake",
     description: "Desc",
     contributions: [""],
+    tools: [],
     collaborators: ["Summit Pradhan"],
     types: ["game", "software"],
     itchUrl: "https://itch.io/embed-upload/13840436?color=333333&autoplay=0",
@@ -48,6 +51,7 @@ export const projects: Project[] = [
     title: "LaboRATory",
     description: "Desc",
     contributions: [""],
+    tools: [],
     collaborators: ["Chris Guerrero"],
     types: ["game"],
     itchUrl: "https://itch.io/embed-upload/13840698?color=333333&autoplay=0",
@@ -59,6 +63,7 @@ export const projects: Project[] = [
     title: "Subscription Campaign Optimization",
     description: "Desc",
     contributions: [""],
+    tools: [],
     collaborators: ["Ronald Catahimican", "Kaila Li"],
     types: ["data"],
     tableauUrl: {
@@ -74,6 +79,7 @@ export const projects: Project[] = [
     title: "Box Office Profitability",
     description: "Desc",
     contributions: [""],
+    tools: [],
     collaborators: ["Ronald Catahimican", "Kaila Li"],
     types: ["data"],
     tableauUrl: {
@@ -89,6 +95,7 @@ export const projects: Project[] = [
     title: "Predicting Emotions with GRU",
     description: "Desc",
     contributions: [""],
+    tools: [],
     collaborators: ["Branley Mmasi"],
     types: ["data", "software"],
     otherUrls: [["GitHub Repo", ""]],
@@ -99,6 +106,7 @@ export const projects: Project[] = [
     title: "Angklung Educational Website",
     description: "Desc",
     contributions: [""],
+    tools: [],
     collaborators: [],
     types: ["software"],
     otherUrls: [["Live Website", ""], ["GitHub Repo", ""]],
