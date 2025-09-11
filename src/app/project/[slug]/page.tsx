@@ -1,4 +1,4 @@
-import { BottomBar, SectionTitle, ProjectDescription, MediaCarousel } from "@/components";
+import { BottomBar, SectionTitle, ProjectDescription, ProjectTasks, MediaCarousel } from "@/components";
 import { projects } from "@/data/projects";
 
 type ProjectPageProps = {
@@ -18,9 +18,11 @@ export default async function Project({ params }: ProjectPageProps) {
     <section className="p-6">
       <SectionTitle title={project.title} variant="A" proportion={1} type={project.types[0]} />
 
-      <ProjectDescription description={project.description} collaborators={[]} tools={[]} />
+      <ProjectDescription description={project.description} collaborators={project.collaborators} links={project.otherUrls} />
 
       <MediaCarousel itchUrl={project.itchUrl} tableauUrl={project.tableauUrl} images={project.images} />
+
+      <ProjectTasks contributions={project.contributions} />
 
       <div className="py-15" />
 

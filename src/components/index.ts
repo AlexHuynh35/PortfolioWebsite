@@ -1,6 +1,7 @@
 export { default as ProjectCard } from "./project_preview";
 export { default as ProjectGallery } from "./project_gallery";
 export { default as ProjectDescription } from "./project_description";
+export { default as ProjectTasks } from "./project_tasks";
 export { default as Sidebar } from "./sidebar";
 export { default as BottomBar } from "./bottom_bar";
 export { default as SectionTitle } from "./section_title";

@@ -9,7 +9,7 @@ type TableauEmbedProps = {
 export default function TableauEmbed({ url, width, height }: TableauEmbedProps) {
   return (
     <div className="relative max-w-6xl mx-auto h-250 my-15 flex justify-center">
-      <div className="absolute left-10 -top-30 w-80 h-24 z-10">
+      <div className="absolute left-10 -top-30 w-80 z-10">
         <SectionTitle title="Explore the Data!" variant="A" proportion={2} type="main" />
       </div>
 
