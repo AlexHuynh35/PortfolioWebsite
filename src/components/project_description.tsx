@@ -97,7 +97,7 @@ export default function ProjectDescription({ description, collaborators, links }
         </div>
         <div
           onClick={() => setActiveBox(activeBox === 0 ? 1 : 0)}
-          className="absolute right-0 bottom-0 w-8 h-8"
+          className="absolute right-0 bottom-0 w-8 h-8 hover:scale-105"
         >
           <Image
             src="/icons/arrow.png"

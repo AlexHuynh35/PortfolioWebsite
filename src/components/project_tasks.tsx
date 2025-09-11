@@ -10,7 +10,7 @@ type ProjectTasksProps = {
 
 export default function ProjectTasks({ contributions, tools }: ProjectTasksProps) {
   return (
-    <div className="relative max-w-6xl mx-auto h-200 mt-30 mb-45 md:my-30">
+    <div className="relative max-w-6xl mx-auto h-200 mt-30 mb-15">
       <div className="absolute left-10 -top-30 w-80 z-10">
         <SectionTitle title="Tasks" variant="A" proportion={2} type="main" />
       </div>
@@ -28,7 +28,7 @@ export default function ProjectTasks({ contributions, tools }: ProjectTasksProps
       </div>
       <div className="absolute hidden md:block right-10 bottom-0 w-128 h-64">
         <div className="absolute inset-0 -m-[10px] bg-gold [clip-path:polygon(0_0,100%_0%,100%_100%,0_100%)] -z-20" />
-        <div className="absolute inset-0 bg-parchment [clip-path:polygon(0_0,100%_0%,100%_80%,80%_100%,0_100%)] flex justify-center -z-10">
+        <div className="absolute inset-0 bg-parchment [clip-path:polygon(0_0,100%_0%,100%_80%,90%_100%,0_100%)] flex justify-center -z-10">
           <h2 className="font-bold font-orbitron text-darkbrown text-3xl pt-8">Tools</h2>
         </div>
         <div className="absolute inset-0 text-darkbrown flex flex-row flex-wrap justify-center content-center gap-4 px-8 mt-15">
@@ -46,10 +46,10 @@ export default function ProjectTasks({ contributions, tools }: ProjectTasksProps
       </div>
       <div className="absolute md:hidden right-10 -bottom-15 w-64 h-128">
         <div className="absolute inset-0 -m-[10px] bg-gold [clip-path:polygon(0_0,100%_0%,100%_100%,0_100%)] -z-20" />
-        <div className="absolute inset-0 bg-parchment [clip-path:polygon(0_0,100%_0%,100%_80%,80%_100%,0_100%)] flex justify-center -z-10">
+        <div className="absolute inset-0 bg-parchment [clip-path:polygon(0_0,100%_0%,100%_90%,80%_100%,0_100%)] flex justify-center -z-10">
           <h2 className="font-bold font-orbitron text-darkbrown text-3xl pt-8">Tools</h2>
         </div>
-        <div className="absolute inset-0 text-darkbrown flex flex-row flex-wrap justify-center content-center gap-4 px-8 mt-15">
+        <div className="absolute inset-0 text-darkbrown flex flex-col flex-wrap justify-center content-center gap-4 px-8 mt-15">
           {tools.map(([name, url], index) => (
             <div key={index} className="relative text-xl font-rajdhani w-15 h-15">
               <Image

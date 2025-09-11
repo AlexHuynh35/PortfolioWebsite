@@ -24,7 +24,7 @@ export default async function Project({ params }: ProjectPageProps) {
 
       <MediaCarousel itchUrl={project.itchUrl} tableauUrl={project.tableauUrl} images={project.images} />
 
-      <div className="py-15" />
+      <div className="py-20" />
 
       <BottomBar type={project.types[1] ? project.types[1] : project.types[0]} />
     </section>
