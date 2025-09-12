@@ -18,7 +18,7 @@ export default function ProjectDescription({ description, collaborators, links }
 
   return (
     <div className="relative max-w-6xl mx-auto h-150 my-30">
-      <div className="absolute right-10 -top-30 w-80 z-10">
+      <div className="absolute right-10 -top-20 w-80 z-10">
         <SectionTitle title="Description" variant="B" proportion={2} type="main" />
       </div>
       <div className="absolute inset-0 -m-[10px] bg-slate-300 [clip-path:polygon(0_0,100%_5%,100%_75%,0%_80%)] -z-40" />
@@ -28,11 +28,11 @@ export default function ProjectDescription({ description, collaborators, links }
         </h2>
       </div>
       <div className="absolute hidden md:block right-90 bottom-0 w-64 h-64">
-        <div className="absolute inset-0 -m-[10px] bg-gold [clip-path:polygon(0_0,100%_0%,100%_100%,0_100%)] -z-20" />
-        <div className="absolute inset-0 bg-parchment [clip-path:polygon(0_0,100%_0%,100%_80%,80%_100%,0_100%)] flex justify-center -z-10">
-          <h2 className="font-bold font-orbitron text-darkbrown text-3xl pt-8">External Links</h2>
+        <div className="absolute inset-0 -m-[10px] bg-cyan-600 [clip-path:polygon(0_0,100%_0%,100%_100%,0_100%)] -z-20" />
+        <div className="absolute inset-0 bg-cyan-500 [clip-path:polygon(0_0,100%_0%,100%_80%,80%_100%,0_100%)] flex justify-center -z-10">
+          <h2 className="font-bold font-orbitron text-black text-3xl pt-8">External Links</h2>
         </div>
-        <div className="absolute inset-0 text-darkbrown flex justify-left items-center px-8">
+        <div className="absolute inset-0 text-black flex justify-left items-center px-8">
           <ul className="list-none list-inside">
             {links.map(([name, url], index) => (
               <li key={index} className="text-xl font-rajdhani">
@@ -49,11 +49,11 @@ export default function ProjectDescription({ description, collaborators, links }
         </div>
       </div>
       <div className="absolute hidden md:block right-10 bottom-0 w-64 h-64">
-        <div className="absolute inset-0 -m-[10px] bg-gold [clip-path:polygon(0_0,100%_0%,100%_100%,0_100%)] -z-20" />
-        <div className="absolute inset-0 bg-parchment [clip-path:polygon(0_0,100%_0%,100%_80%,80%_100%,0_100%)] flex justify-center -z-10">
-          <h2 className="font-bold font-orbitron text-darkbrown text-3xl pt-8">Collaborators</h2>
+        <div className="absolute inset-0 -m-[10px] bg-cyan-600 [clip-path:polygon(0_0,100%_0%,100%_100%,0_100%)] -z-20" />
+        <div className="absolute inset-0 bg-cyan-500 [clip-path:polygon(0_0,100%_0%,100%_80%,80%_100%,0_100%)] flex justify-center -z-10">
+          <h2 className="font-bold font-orbitron text-black text-3xl pt-8">Collaborators</h2>
         </div>
-        <div className="absolute inset-0 text-darkbrown flex justify-left items-center px-8">
+        <div className="absolute inset-0 text-black flex justify-left items-center px-8">
           <ul className="list-none list-inside">
             {collaborators.map((name, index) => (
               <li key={index} className="text-xl font-rajdhani">
@@ -65,11 +65,11 @@ export default function ProjectDescription({ description, collaborators, links }
         </div>
       </div>
       <div className="absolute md:hidden right-10 bottom-0 w-64 h-64">
-        <div className="absolute inset-0 -m-[10px] bg-gold [clip-path:polygon(0_0,100%_0%,100%_100%,0_100%)] -z-20" />
-        <div className="absolute inset-0 bg-parchment [clip-path:polygon(0_0,100%_0%,100%_80%,80%_100%,0_100%)] flex justify-center -z-10">
-          <h2 className="font-bold font-orbitron text-darkbrown text-3xl pt-8">{activeBox === 0 ? "External Links" : "Collaborators"}</h2>
+        <div className="absolute inset-0 -m-[10px] bg-cyan-600 [clip-path:polygon(0_0,100%_0%,100%_100%,0_100%)] -z-20" />
+        <div className="absolute inset-0 bg-cyan-500 [clip-path:polygon(0_0,100%_0%,100%_80%,80%_100%,0_100%)] flex justify-center -z-10">
+          <h2 className="font-bold font-orbitron text-black text-3xl pt-8">{activeBox === 0 ? "External Links" : "Collaborators"}</h2>
         </div>
-        <div className="absolute inset-0 text-darkbrown flex justify-left items-center px-8">
+        <div className="absolute inset-0 text-black flex justify-left items-center px-8">
           {activeBox === 0 ? (
             <ul className="list-none list-inside">
               {links.map(([name, url], index) => (

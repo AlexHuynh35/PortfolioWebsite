@@ -24,7 +24,7 @@ export default function MediaCarouselProps({ itchUrl, tableauUrl, images }: Medi
     mediaSlides.push({
       type: "itch",
       content: <ItchEmbed url={itchUrl} />,
-      label: "Play Game",
+      label: "Game",
     });
   }
 
@@ -38,7 +38,7 @@ export default function MediaCarouselProps({ itchUrl, tableauUrl, images }: Medi
           height={tableauUrl.height}
         />
       ),
-      label: "See Dashboard",
+      label: "Dashboard",
     });
   }
 
@@ -46,7 +46,7 @@ export default function MediaCarouselProps({ itchUrl, tableauUrl, images }: Medi
     mediaSlides.push({
       type: "images",
       content: <SlideViewer urls={images} />,
-      label: "Read Deliverables",
+      label: "Report",
     });
   }
 
@@ -63,14 +63,14 @@ export default function MediaCarouselProps({ itchUrl, tableauUrl, images }: Medi
 
   return (
     <div>
-      <div className="max-w-6xl mx-auto flex flex-row items-center justify-center gap-10">
+      <div className="max-w-6xl mx-auto flex flex-row items-center justify-center gap-10 mt-30 mb-5 md:my-5">
         {mediaSlides.length > 1 && (
           <div className="flex text-center justify-center">
             <div className="relative w-32">
               <div className={`absolute inset-0 ${current > min ? "bg-slate-300" : "bg-neutral-700"} shadow-[0_4px_0_rgba(0,0,0,0.5)] [clip-path:polygon(0_50%,10%_10%,100%_15%,90%_90%,10%_95%)]`} />
               <div
                 onClick={current > min ? prev : undefined}
-                className={`block m-1 py-8 px-4 font-orbitron font-bold text-xs transform -translate-y-1 transition-transform [clip-path:polygon(0_50%,10%_10%,100%_15%,90%_90%,10%_95%)] ${current > min ? "bg-slate-200 hover:bg-slate-100 text-black active:translate-y-0" : "bg-neutral-600 text-neutral-600"}`}
+                className={`block m-1 py-8 px-4 font-orbitron font-bold text-sm transform -translate-y-1 transition-transform [clip-path:polygon(0_50%,10%_10%,100%_15%,90%_90%,10%_95%)] ${current > min ? "bg-slate-200 hover:bg-slate-100 text-black active:translate-y-0" : "bg-neutral-600 text-neutral-600"}`}
               >
                 {current > min ? prevLabel : <p className="invisible">Prev</p>}
               </div>
@@ -88,7 +88,7 @@ export default function MediaCarouselProps({ itchUrl, tableauUrl, images }: Medi
               <div className={`absolute inset-0 ${current < max ? "bg-slate-300" : "bg-neutral-700"} shadow-[0_4px_0_rgba(0,0,0,0.5)] [clip-path:polygon(100%_50%,90%_10%,0_15%,10%_90%,90%_95%)]`} />
               <div
                 onClick={current < max ? next : undefined}
-                className={`block m-1 py-8 px-4 font-orbitron font-bold text-xs transform -translate-y-1 transition-transform [clip-path:polygon(100%_50%,90%_10%,0_15%,10%_90%,90%_95%)] ${current < max ? "bg-slate-200 hover:bg-slate-100 text-black active:translate-y-0" : "bg-neutral-600 text-neutral-600"}`}
+                className={`block m-1 py-8 px-4 font-orbitron font-bold text-sm transform -translate-y-1 transition-transform [clip-path:polygon(100%_50%,90%_10%,0_15%,10%_90%,90%_95%)] ${current < max ? "bg-slate-200 hover:bg-slate-100 text-black active:translate-y-0" : "bg-neutral-600 text-neutral-600"}`}
               >
                 {current < max ? nextLabel : <p className="invisible">Next</p>}
               </div>
