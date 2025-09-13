@@ -1,9 +1,11 @@
 "use client"
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { Sidebar, ProjectGallery, SectionTitle } from "@/components";
 import { projects } from "@/data/projects";
+
+type SortMode = "alphabetical" | "recent";
 
 const typeToColor = {
   data: "bg-emerald-500 hover:bg-emerald-400",
@@ -18,6 +20,21 @@ const typeToImage = {
 };
 
 export default function Home() {
+  const [sortMode, setSortMode] = useState<SortMode>("recent");
+
+  const sortedProjects = useMemo(() => {
+    const projectsCopy = [...projects];
+    if (sortMode === "alphabetical") {
+      return projectsCopy.sort((a, b) => a.title.localeCompare(b.title));
+    } else {
+      return projectsCopy.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    }
+  }, [projects, sortMode]);
+
+  const toggleSort = () => {
+    setSortMode((prev) => (prev === "alphabetical" ? "recent" : "alphabetical"));
+  };
+
   const [filters, setFilters] = useState({
     data: true,
     software: true,
@@ -28,7 +45,7 @@ export default function Home() {
     setFilters((prev) => ({ ...prev, [type]: !prev[type] }));
   };
 
-  const filteredProjects = projects.filter((project) =>
+  const filteredProjects = sortedProjects.filter((project) =>
     project.types.some((t) => filters[t as keyof typeof filters])
   );
 
@@ -77,6 +94,22 @@ export default function Home() {
                 </div>
               </div>
             ))}
+            <div
+              className="relative w-20 h-20"
+            >
+              <div className="absolute inset-0 w-full h-full bg-neutral-700 rounded-full" />
+              <div
+                onClick={() => toggleSort()}
+                className={`absolute inset-0 w-18 h-18 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition bg-cyan-500 hover:bg-cyan-400`}
+              >
+                <Image
+                  src={sortMode == "alphabetical" ? "/svgs/alphabet.svg" : "/svgs/recent.svg"}
+                  alt="sort"
+                  fill
+                  className={`object-contain p-3`}
+                />
+              </div>
+            </div>
           </div>
         </div>
 

@@ -9,6 +9,7 @@ type TableauInfo = {
 export interface Project {
   slug: string;
   title: string;
+  date: string;
   description: string;
   contributions: string[];
   tools: [string, string][];
@@ -26,6 +27,7 @@ export const projects: Project[] = [
     slug: "frogger_remake",
     title: "Frogger Remake",
     description: "Desc",
+    date: "2023-10",
     contributions: [""],
     tools: [],
     collaborators: ["Summit Pradhan"],
@@ -38,6 +40,7 @@ export const projects: Project[] = [
     slug: "fruit_ninja_demake",
     title: "Fruit Ninja Demake",
     description: "Desc",
+    date: "2023-11",
     contributions: [""],
     tools: [],
     collaborators: ["Summit Pradhan"],
@@ -50,6 +53,7 @@ export const projects: Project[] = [
     slug: "laboratory",
     title: "LaboRATory",
     description: "Desc",
+    date: "2024-03",
     contributions: [""],
     tools: [],
     collaborators: ["Chris Guerrero"],
@@ -62,6 +66,7 @@ export const projects: Project[] = [
     slug: "subscription_campaign_optimization",
     title: "Subscription Campaign Optimization",
     description: "Desc",
+    date: "2025-05",
     contributions: [""],
     tools: [],
     collaborators: ["Ronald Catahimican", "Kaila Li"],
@@ -78,6 +83,7 @@ export const projects: Project[] = [
     slug: "box_office_profitability",
     title: "Box Office Profitability",
     description: "Desc",
+    date: "2025-03",
     contributions: [""],
     tools: [],
     collaborators: ["Ronald Catahimican", "Kaila Li"],
@@ -94,6 +100,7 @@ export const projects: Project[] = [
     slug: "predicting_emotions_with_gru",
     title: "Predicting Emotions with GRU",
     description: "Desc",
+    date: "2024-05",
     contributions: [""],
     tools: [],
     collaborators: ["Branley Mmasi"],
@@ -105,6 +112,7 @@ export const projects: Project[] = [
     slug: "angklung_educational_website",
     title: "Angklung Educational Website",
     description: "Desc",
+    date: "2025-08",
     contributions: [""],
     tools: [],
     collaborators: [],

@@ -13,7 +13,7 @@ export default function ProjectGallery({ projectList }: ProjectGalleryProps) {
           key={idx}
           slug={project.slug}
           title={project.title}
-          description={project.description}
+          date={project.date}
           types={project.types}
           collaborators={project.collaborators.length}
           variant={idx % 2 === 0 ? "A" : "B"}
