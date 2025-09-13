@@ -20,15 +20,9 @@ const typeToColor = {
 };
 
 const typeToImage = {
-  data: "/icons/data.png",
-  software: "/icons/software.png",
-  game: "/icons/game.png",
-};
-
-const typeToPadding = {
-  data: "p-4",
-  software: "p-4",
-  game: "p-2",
+  data: "/svgs/data.svg",
+  software: "/svgs/software.svg",
+  game: "/svgs/game.svg",
 };
 
 export default function ProjectCard({ slug, title, description, types, collaborators, variant }: ProjectCardProps) {
@@ -43,7 +37,7 @@ export default function ProjectCard({ slug, title, description, types, collabora
         {collaborators != 0 && (
           <div className={`absolute w-1/7 h-5/42 ${typePosCollab} rounded-full z-10`}>
             <Image
-              src="/icons/collaborate.png"
+              src="/svgs/team.svg"
               alt="collaborate"
               fill
               className="object-contain"
@@ -56,7 +50,7 @@ export default function ProjectCard({ slug, title, description, types, collabora
             src={typeToImage[types[0]]}
             alt={title}
             fill
-            className={`object-contain ${typeToPadding[types[0]]}`}
+            className={`object-contain p-3`}
           />
         </div>
 
@@ -66,7 +60,7 @@ export default function ProjectCard({ slug, title, description, types, collabora
               src={typeToImage[types[1]]}
               alt={title}
               fill
-              className={`object-contain ${typeToPadding[types[1]]}`}
+              className={`object-contain p-3`}
             />
           </div>
         ) : (
@@ -75,7 +69,7 @@ export default function ProjectCard({ slug, title, description, types, collabora
               src={typeToImage[types[0]]}
               alt={title}
               fill
-              className={`object-contain ${typeToPadding[types[0]]}`}
+              className={`object-contain p-3`}
             />
           </div>
         )}

@@ -12,15 +12,9 @@ const typeToColor = {
 };
 
 const typeToImage = {
-  data: "/icons/data.png",
-  software: "/icons/software.png",
-  game: "/icons/game.png",
-};
-
-const typeToPadding = {
-  data: "p-4",
-  software: "p-4",
-  game: "p-2",
+  data: "/svgs/data.svg",
+  software: "/svgs/software.svg",
+  game: "/svgs/game.svg",
 };
 
 export default function Home() {
@@ -50,7 +44,7 @@ export default function Home() {
             <div className={`absolute inset-0 -m-[10px] bg-slate-300 [clip-path:polygon(5%_5%,95%_0,100%_100%,0_95%)] -z-10`} />
             <div className={`absolute inset-0 bg-slate-200 [clip-path:polygon(5%_5%,95%_0,100%_100%,0_95%)] flex flex-row items-center justify-center px-12`}>
               <Image
-                src="/icons/search.png"
+                src="/svgs/search.svg"
                 alt="search"
                 width={24}
                 height={24}
@@ -78,7 +72,7 @@ export default function Home() {
                     src={typeToImage[type as keyof typeof filters]}
                     alt={type}
                     fill
-                    className={`object-contain ${typeToPadding[type as keyof typeof filters]}`}
+                    className={`object-contain p-3`}
                   />
                 </div>
               </div>
