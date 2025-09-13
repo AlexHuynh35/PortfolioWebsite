@@ -10,3 +10,4 @@ export { default as TableauEmbed } from "./tableau_embed";
 export { default as VideoViewer } from "./video_viewer";
 export { default as SlideViewer } from "./slide_viewer";
 export { default as MediaCarousel } from "./media_carousel";
+export { default as ToolShowcase } from "./tool_showcase";

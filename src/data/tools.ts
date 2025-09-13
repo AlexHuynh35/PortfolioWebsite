@@ -100,7 +100,7 @@ export const dataTools: DataTools = {
             name: "Google Sheets",
             proficiency: "expert",
             subTools: ["VLOOKUPs", "INDEX-MATCH", "Pivot Tables", "REGEX", "Wild Cards"],
-            imageUrl: "/svgs/sheet.svg",
+            imageUrl: "/svgs/sheets.svg",
             favorite: true,
             projects: [["Box Office Profitability", "/project/box_office_profitability"], ["Subscription Campaign Optimization", "/project/subscription_campaign_optimization"]],
         },
