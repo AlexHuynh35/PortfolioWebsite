@@ -5,7 +5,6 @@ export interface Tool {
   proficiency: ToolProficiency;
   subTools: string[];
   imageUrl: string;
-  favorite: boolean;
   projects: [string, string][];
 };
 
@@ -21,7 +20,6 @@ export const softwareTools: SoftwareTools = {
             proficiency: "expert",
             subTools: ["Next.JS", "Vite"],
             imageUrl: "/svgs/react.svg",
-            favorite: true,
             projects: [["Angklung Education Website", "/project/angklung_educational_website"]],
         },
         {
@@ -29,7 +27,6 @@ export const softwareTools: SoftwareTools = {
             proficiency: "expert",
             subTools: ["Mobile-Friendly Websites"],
             imageUrl: "/svgs/tailwind.svg",
-            favorite: true,
             projects: [["Angklung Education Website", "/project/angklung_educational_website"]],
         },
         {
@@ -37,27 +34,24 @@ export const softwareTools: SoftwareTools = {
             proficiency: "expert",
             subTools: [],
             imageUrl: "/svgs/typescript.svg",
-            favorite: true,
             projects: [["Angklung Education Website", "/project/angklung_educational_website"]],
         },
     ],
     backend: [
         {
             name: "Python",
-            proficiency: "expert",
+            proficiency: "proficient",
             subTools: ["Flask", "Pandas", "Numpy"],
             imageUrl: "/svgs/python.svg",
-            favorite: true,
             projects: [],
         },
     ],
     database: [
         {
             name: "PostgreSQL",
-            proficiency: "proficient",
+            proficiency: "beginner",
             subTools: ["Relational Database"],
             imageUrl: "/svgs/postgresql.svg",
-            favorite: true,
             projects: [],
         },
     ]
@@ -75,7 +69,6 @@ export const dataTools: DataTools = {
             proficiency: "expert",
             subTools: ["Pandas", "Numpy", "Matplotlib", "Scikit-Learn", "Keras", "Tensorflow", "APIs"],
             imageUrl: "/svgs/python.svg",
-            favorite: true,
             projects: [["Box Office Profitability", "/project/box_office_profitability"], ["Predicting Emotions with GRU", "/project/predicting_emotions_with_gru"]],
         },
         {
@@ -83,7 +76,6 @@ export const dataTools: DataTools = {
             proficiency: "proficient",
             subTools: ["PostgreSQL", "Joins", "Data Aggregation", "CTEs"],
             imageUrl: "/svgs/sql.svg",
-            favorite: false,
             projects: [],
         },
     ],
@@ -91,17 +83,15 @@ export const dataTools: DataTools = {
         {
             name: "Microsoft Excel",
             proficiency: "expert",
-            subTools: ["VLOOKUPs", "INDEX-MATCH", "Pivot Tables", "REGEX", "Wild Cards"],
+            subTools: ["VLOOKUPs", "INDEX-MATCH", "Pivot Tables", "Conditional Formatting", "REGEX", "Wild Cards"],
             imageUrl: "/svgs/excel.svg",
-            favorite: false,
             projects: [["Box Office Profitability", "/project/box_office_profitability"], ["Subscription Campaign Optimization", "/project/subscription_campaign_optimization"]],
         },
         {
             name: "Google Sheets",
             proficiency: "expert",
-            subTools: ["VLOOKUPs", "INDEX-MATCH", "Pivot Tables", "REGEX", "Wild Cards"],
+            subTools: ["VLOOKUPs", "INDEX-MATCH", "Pivot Tables", "Conditional Formatting", "REGEX", "Wild Cards"],
             imageUrl: "/svgs/sheets.svg",
-            favorite: true,
             projects: [["Box Office Profitability", "/project/box_office_profitability"], ["Subscription Campaign Optimization", "/project/subscription_campaign_optimization"]],
         },
     ],
@@ -111,7 +101,6 @@ export const dataTools: DataTools = {
             proficiency: "proficient",
             subTools: ["Interactive Dashboards", "Calculated Fields"],
             imageUrl: "/svgs/tableau.svg",
-            favorite: true,
             projects: [["Box Office Profitability", "/project/box_office_profitability"], ["Subscription Campaign Optimization", "/project/subscription_campaign_optimization"]],
         },
     ]
@@ -128,7 +117,6 @@ export const gameTools: GameTools = {
             proficiency: "proficient",
             subTools: ["Object-Oriented Programming", "Software Design Patterns"],
             imageUrl: "/svgs/csharp.svg",
-            favorite: true,
             projects: [],
         },
         {
@@ -136,7 +124,6 @@ export const gameTools: GameTools = {
             proficiency: "beginner",
             subTools: [],
             imageUrl: "/svgs/c.svg",
-            favorite: false,
             projects: [["Fruit Ninja Demake", "/project/fruit_ninja_demake"]],
         },
         {
@@ -144,7 +131,6 @@ export const gameTools: GameTools = {
             proficiency: "beginner",
             subTools: ["Software Design Patterns"],
             imageUrl: "/svgs/lua.svg",
-            favorite: false,
             projects: [["Frogger Remake", "/project/frogger_remake"]],
         },
     ],
@@ -154,7 +140,6 @@ export const gameTools: GameTools = {
             proficiency: "proficient",
             subTools: ["Photon Fusion"],
             imageUrl: "/svgs/unity.svg",
-            favorite: true,
             projects: [],
         },
         {
@@ -162,7 +147,6 @@ export const gameTools: GameTools = {
             proficiency: "proficient",
             subTools: [],
             imageUrl: "/svgs/construct3.svg",
-            favorite: false,
             projects: [],
         },
     ]

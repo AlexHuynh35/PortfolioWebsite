@@ -1,6 +1,7 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { SectionTitle } from "@/components";
 import { softwareTools, dataTools, gameTools, Tool } from "@/data/tools";
@@ -36,7 +37,7 @@ export default function ToolShowcase() {
   return (
     <div className="relative max-w-5xl mx-auto h-160 my-30">
       <div className="absolute left-10 -top-20 w-80 z-10">
-        <SectionTitle title="Skill Set" variant="B" proportion={2} type="main" />
+        <SectionTitle title="Skill Set" variant="A" proportion={2} type="main" />
       </div>
       <div className="absolute inset-0 -m-[10px] bg-slate-300 [clip-path:polygon(0_5%,100%_0,100%_80%,0%_75%)] -z-40" />
       <div className="absolute inset-0 bg-slate-200 [clip-path:polygon(0_5%,100%_0,100%_80%,0%_75%)] -z-30" />
@@ -67,7 +68,7 @@ export default function ToolShowcase() {
           <div className="flex flex-row justify-around text-center">
             {Object.entries(tools).map(([subType, toolList]) => (
               <div key={subType}>
-                <h3 className="font-bold text-lg md:text-xl font-orbitron text-black capitalize mb-2">{subType}</h3>
+                <h2 className="font-bold text-lg md:text-xl font-orbitron text-black capitalize mb-2">{subType}</h2>
                 <div className="flex justify-center gap-4">
                   {(toolList as Tool[]).map((tool) => (
                     <button
@@ -93,6 +94,68 @@ export default function ToolShowcase() {
           <div className="absolute inset-0 bg-cyan-500 [clip-path:polygon(0_0,100%_0%,100%_80%,80%_100%,0_100%)] flex justify-center items-center text-center -z-10">
             <h2 className={`font-bold font-orbitron text-black text-4xl p-8 ${selectedTool && "hidden"}`}>Select A Tool For More Detail</h2>
           </div>
+          {selectedTool && (
+            <div className="absolute inset-0 text-black flex flex-col justify-left gap-4 px-8">
+              <div className="absolute -left-5 -bottom-2 w-40 h-12 z-10">
+                <div className="absolute inset-0 -m-[10px] bg-slate-300 [clip-path:polygon(4%_4%,96%_6%,94%_94%,6%_96%)] -z-20" />
+                <div className="absolute inset-0 bg-slate-200 [clip-path:polygon(4%_4%,96%_6%,94%_94%,6%_96%)] flex justify-center items-center text-center -z-10">
+                  <h2 className="font-bold text-lg text-black font-orbitron">Proficiency</h2>
+                </div>
+              </div>
+              <div className="absolute right-23 -bottom-4 w-12 h-12 z-10">
+                <div className="relative w-full h-full">
+                  <div className="absolute inset-0 -m-[10px] bg-orange-600 [clip-path:polygon(50%_0%,61%_35%,98%_35%,68%_57%,79%_91%,50%_70%,21%_91%,32%_57%,2%_35%,39%_35%)]" />
+                  <div className="absolute inset-0 bg-orange-500 [clip-path:polygon(50%_0%,61%_35%,98%_35%,68%_57%,79%_91%,50%_70%,21%_91%,32%_57%,2%_35%,39%_35%)]" />
+                </div>
+              </div>
+              <div className="absolute right-6 -bottom-7 w-12 h-12 z-10">
+                <div className="relative w-full h-full">
+                  <div className={`absolute inset-0 -m-[10px] ${selectedTool.proficiency != "beginner" ? "bg-orange-600" : "bg-neutral-700"} [clip-path:polygon(50%_0%,61%_35%,98%_35%,68%_57%,79%_91%,50%_70%,21%_91%,32%_57%,2%_35%,39%_35%)]`} />
+                  <div className={`absolute inset-0 ${selectedTool.proficiency != "beginner" ? "bg-orange-500" : "bg-neutral-600"} [clip-path:polygon(50%_0%,61%_35%,98%_35%,68%_57%,79%_91%,50%_70%,21%_91%,32%_57%,2%_35%,39%_35%)]`} />
+                </div>
+              </div>
+              <div className="absolute -right-7 bottom-3 w-12 h-12 z-10">
+                <div className="relative w-full h-full">
+                  <div className={`absolute inset-0 -m-[10px] ${selectedTool.proficiency == "expert" ? "bg-orange-600" : "bg-neutral-700"} [clip-path:polygon(50%_0%,61%_35%,98%_35%,68%_57%,79%_91%,50%_70%,21%_91%,32%_57%,2%_35%,39%_35%)]`} />
+                  <div className={`absolute inset-0 ${selectedTool.proficiency == "expert" ? "bg-orange-500" : "bg-neutral-600"} [clip-path:polygon(50%_0%,61%_35%,98%_35%,68%_57%,79%_91%,50%_70%,21%_91%,32%_57%,2%_35%,39%_35%)]`} />
+                </div>
+              </div>
+              <div className="flex justify-center items-center gap-4 mt-2 my-1">
+                <div className="relative w-12 h-12">
+                  <Image
+                    src={selectedTool.imageUrl}
+                    alt={selectedTool.name}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <h2 className="text-xl font-orbitron font-bold">{selectedTool.name}</h2>
+              </div>
+              {selectedTool.subTools?.length > 0 && (
+                <div>
+                  <span className="font-semibold font-orbitron text-md">Capabilities:</span>{" "}
+                  <div className="font-rajdhani text-md">{selectedTool.subTools.join(", ")}</div>
+                </div>
+              )}
+              {selectedTool.projects?.length > 0 && (
+                <div>
+                  <span className="font-semibold font-orbitron text-md">Projects:</span>{" "}
+                  <ul className="list-disc list-inside">
+                    {selectedTool.projects.map(([name, url], i) => (
+                      <li key={i}>
+                        <Link
+                          href={url}
+                          className="font-rajdhani hover:underline text-md"
+                        >
+                          {name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       </div>
     </div>
