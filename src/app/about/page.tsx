@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 import { Sidebar, SectionTitle, ToolShowcase, ProjectGallery } from "@/components";
 import { wipProjects } from "@/data/projects";
+import { socials, aboutMe } from "@/data/about";
 
 export default function About() {
   return (
@@ -26,50 +28,19 @@ export default function About() {
             </div>
           </div>
           <div className="flex flex-row items-center justify-center gap-4">
-            <div className="relative w-20 h-20">
-              <div className="absolute inset-0 w-full h-full bg-neutral-700 rounded-full" />
-              <div className={`absolute inset-0 w-18 h-18 bg-cyan-500 hover:bg-cyan-400 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition`}>
-                <Image
-                  src="/svgs/linkedin.svg"
-                  alt="linkedin"
-                  fill
-                  className={`object-contain p-3`}
-                />
+            {socials.map((social) => (
+              <div className="relative w-20 h-20">
+                <div className="absolute inset-0 w-full h-full bg-neutral-700 rounded-full" />
+                <Link href={social.link} target="_blank" rel="noopener noreferrer" className={`block absolute inset-0 w-18 h-18 bg-cyan-500 hover:bg-cyan-400 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition`}>
+                  <Image
+                    src={social.imageUrl}
+                    alt={social.name}
+                    fill
+                    className={`object-contain p-3`}
+                  />
+                </Link>
               </div>
-            </div>
-            <div className="relative w-20 h-20">
-              <div className="absolute inset-0 w-full h-full bg-neutral-700 rounded-full" />
-              <div className={`absolute inset-0 w-18 h-18 bg-cyan-500 hover:bg-cyan-400 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition`}>
-                <Image
-                  src="/svgs/github.svg"
-                  alt="github"
-                  fill
-                  className={`object-contain p-3`}
-                />
-              </div>
-            </div>
-            <div className="relative w-20 h-20">
-              <div className="absolute inset-0 w-full h-full bg-neutral-700 rounded-full" />
-              <div className={`absolute inset-0 w-18 h-18 bg-cyan-500 hover:bg-cyan-400 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition`}>
-                <Image
-                  src="/svgs/itch.svg"
-                  alt="itch"
-                  fill
-                  className={`object-contain p-3`}
-                />
-              </div>
-            </div>
-            <div className="relative w-20 h-20">
-              <div className="absolute inset-0 w-full h-full bg-neutral-700 rounded-full" />
-              <div className={`absolute inset-0 w-18 h-18 bg-cyan-500 hover:bg-cyan-400 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition`}>
-                <Image
-                  src="/svgs/tableau.svg"
-                  alt="tableau"
-                  fill
-                  className={`object-contain p-3`}
-                />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         <div className="w-full md:w-11/20 aspect-[5/7] flex flex-col justify-center items-center gap-2">

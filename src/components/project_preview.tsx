@@ -34,7 +34,7 @@ export default function ProjectCard({ slug, title, date, types, collaborators, v
 
   return (
     <div className="relative w-70 aspect-[5/6] hover:scale-105">
-      <Link href={`/project/${slug}`}>
+      <Link href={`/project/${slug}`} rel="noopener noreferrer">
         {collaborators != 0 && (
           <div className={`absolute w-1/7 h-5/42 ${typePosCollab} rounded-full z-10`}>
             <Image

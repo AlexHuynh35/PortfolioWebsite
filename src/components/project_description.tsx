@@ -39,6 +39,7 @@ export default function ProjectDescription({ description, collaborators, links }
                 <span className="mr-2">★</span>
                 <Link
                   href={url}
+                  rel="noopener noreferrer"
                   className="font-semibold hover:underline"
                 >
                   {name}
@@ -77,6 +78,7 @@ export default function ProjectDescription({ description, collaborators, links }
                   <span className="mr-2">★</span>
                   <Link
                     href={url}
+                    rel="noopener noreferrer"
                     className="font-semibold hover:underline"
                   >
                     {name}

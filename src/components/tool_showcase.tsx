@@ -145,6 +145,7 @@ export default function ToolShowcase() {
                       <li key={i}>
                         <Link
                           href={url}
+                          rel="noopener noreferrer"
                           className="font-rajdhani hover:underline text-md"
                         >
                           {name}
