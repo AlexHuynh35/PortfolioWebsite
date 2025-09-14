@@ -1,3 +1,5 @@
+import { ToolImageDict } from "./tools";
+
 type ProjectType = "software" | "game" | "data";
 
 type TableauInfo = {
@@ -29,7 +31,7 @@ export const projects: Project[] = [
     description: "Desc",
     date: "2023-10",
     contributions: [""],
-    tools: [],
+    tools: [ToolImageDict.lua],
     collaborators: ["Summit Pradhan"],
     types: ["game", "software"],
     itchUrl: "https://itch.io/embed-upload/13681337?color=333333&autoplay=0",
@@ -42,7 +44,7 @@ export const projects: Project[] = [
     description: "Desc",
     date: "2023-11",
     contributions: [""],
-    tools: [],
+    tools: [ToolImageDict.c],
     collaborators: ["Summit Pradhan"],
     types: ["game", "software"],
     itchUrl: "https://itch.io/embed-upload/13840436?color=333333&autoplay=0",
@@ -68,7 +70,7 @@ export const projects: Project[] = [
     description: "Desc",
     date: "2025-05",
     contributions: [""],
-    tools: [],
+    tools: [ToolImageDict.excel, ToolImageDict.tableau],
     collaborators: ["Ronald Catahimican", "Kaila Li"],
     types: ["data"],
     tableauUrl: {
@@ -85,7 +87,7 @@ export const projects: Project[] = [
     description: "Desc",
     date: "2025-03",
     contributions: [""],
-    tools: [],
+    tools: [ToolImageDict.excel, ToolImageDict.tableau, ToolImageDict.python],
     collaborators: ["Ronald Catahimican", "Kaila Li"],
     types: ["data"],
     tableauUrl: {
@@ -102,7 +104,7 @@ export const projects: Project[] = [
     description: "Desc",
     date: "2024-05",
     contributions: [""],
-    tools: [],
+    tools: [ToolImageDict.python],
     collaborators: ["Branley Mmasi"],
     types: ["data", "software"],
     otherUrls: [["GitHub Repo", ""]],
@@ -114,7 +116,7 @@ export const projects: Project[] = [
     description: "Desc",
     date: "2025-08",
     contributions: [""],
-    tools: [],
+    tools: [ToolImageDict.react, ToolImageDict.tailwind, ToolImageDict.typescript],
     collaborators: [],
     types: ["software"],
     otherUrls: [["Live Website", ""], ["GitHub Repo", ""]],
@@ -129,7 +131,7 @@ export const wipProjects: Project[] = [
     description: "Desc",
     date: "TBD",
     contributions: [""],
-    tools: [],
+    tools: [ToolImageDict.unity, ToolImageDict.csharp],
     collaborators: [],
     types: ["game", "software"],
     otherUrls: [["GitHub Repo", ""]],
@@ -141,7 +143,7 @@ export const wipProjects: Project[] = [
     description: "Desc",
     date: "TBD",
     contributions: [""],
-    tools: [],
+    tools: [ToolImageDict.unity, ToolImageDict.csharp],
     collaborators: ["Jason Yu", "Timmy Tram", "Jacky Liu"],
     types: ["software", "game"],
     otherUrls: [],
@@ -153,7 +155,7 @@ export const wipProjects: Project[] = [
     description: "Desc",
     date: "TBD",
     contributions: [""],
-    tools: [],
+    tools: [ToolImageDict.react, ToolImageDict.tailwind, ToolImageDict.typescript, ToolImageDict.python, ToolImageDict.postgresql],
     collaborators: [],
     types: ["software", "data"],
     otherUrls: [["GitHub Repo", ""]],
