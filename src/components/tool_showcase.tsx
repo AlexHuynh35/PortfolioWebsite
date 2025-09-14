@@ -52,7 +52,7 @@ export default function ToolShowcase() {
                 <div className="absolute inset-0 w-full h-full bg-neutral-700 rounded-full" />
                 <div
                   onClick={() => setCurrentCategory(cat)}
-                  className={`absolute inset-0 w-18 h-18 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition ${cat == currentCategory ? typeToColor[cat as keyof typeof typeToColor] : "bg-neutral-600 hover:bg-neutral-500"}`}
+                  className={`absolute inset-0 w-18 h-18 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition cursor-pointer ${cat == currentCategory ? typeToColor[cat as keyof typeof typeToColor] : "bg-neutral-600 hover:bg-neutral-500"}`}
                 >
                   <Image
                     src={typeToImage[cat as keyof typeof typeToImage]}
@@ -74,7 +74,7 @@ export default function ToolShowcase() {
                     <button
                       key={tool.name}
                       onClick={() => setSelectedTool(tool)}
-                      className="relative w-12 h-12"
+                      className="relative w-12 h-12 cursor-pointer"
                     >
                       <Image
                         src={tool.imageUrl}

@@ -70,7 +70,7 @@ export default function MediaCarouselProps({ itchUrl, tableauUrl, images }: Medi
               <div className={`absolute inset-0 ${current > min ? "bg-slate-300" : "bg-neutral-700"} shadow-[0_4px_0_rgba(0,0,0,0.5)] [clip-path:polygon(0_50%,10%_10%,100%_15%,90%_90%,10%_95%)]`} />
               <div
                 onClick={current > min ? prev : undefined}
-                className={`block m-1 py-8 px-4 font-orbitron font-bold text-sm transform -translate-y-1 transition-transform [clip-path:polygon(0_50%,10%_10%,100%_15%,90%_90%,10%_95%)] ${current > min ? "bg-slate-200 hover:bg-slate-100 text-black active:translate-y-0" : "bg-neutral-600 text-neutral-600"}`}
+                className={`block m-1 py-8 px-4 font-orbitron font-bold text-sm transform -translate-y-1 transition-transform cursor-pointer [clip-path:polygon(0_50%,10%_10%,100%_15%,90%_90%,10%_95%)] ${current > min ? "bg-slate-200 hover:bg-slate-100 text-black active:translate-y-0" : "bg-neutral-600 text-neutral-600"}`}
               >
                 {current > min ? prevLabel : <p className="invisible">Prev</p>}
               </div>
@@ -88,7 +88,7 @@ export default function MediaCarouselProps({ itchUrl, tableauUrl, images }: Medi
               <div className={`absolute inset-0 ${current < max ? "bg-slate-300" : "bg-neutral-700"} shadow-[0_4px_0_rgba(0,0,0,0.5)] [clip-path:polygon(100%_50%,90%_10%,0_15%,10%_90%,90%_95%)]`} />
               <div
                 onClick={current < max ? next : undefined}
-                className={`block m-1 py-8 px-4 font-orbitron font-bold text-sm transform -translate-y-1 transition-transform [clip-path:polygon(100%_50%,90%_10%,0_15%,10%_90%,90%_95%)] ${current < max ? "bg-slate-200 hover:bg-slate-100 text-black active:translate-y-0" : "bg-neutral-600 text-neutral-600"}`}
+                className={`block m-1 py-8 px-4 font-orbitron font-bold text-sm transform -translate-y-1 transition-transform cursor-pointer [clip-path:polygon(100%_50%,90%_10%,0_15%,10%_90%,90%_95%)] ${current < max ? "bg-slate-200 hover:bg-slate-100 text-black active:translate-y-0" : "bg-neutral-600 text-neutral-600"}`}
               >
                 {current < max ? nextLabel : <p className="invisible">Next</p>}
               </div>

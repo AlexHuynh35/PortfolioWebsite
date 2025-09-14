@@ -164,7 +164,7 @@ export default function Home() {
                           <li
                             key={i}
                             onClick={() => handleSelect(s)}
-                            className="px-4 py-2 hover:scale-105 hover:bg-slate-100"
+                            className="px-4 py-2 hover:scale-105 hover:bg-slate-100 cursor-pointer"
                           >
                             {s}
                           </li>
@@ -179,7 +179,7 @@ export default function Home() {
                   alt="refresh"
                   width={24}
                   height={24}
-                  className={`object-contain hover:scale-105`}
+                  className={`object-contain hover:scale-105 cursor-pointer`}
                 />
               </div>
             </div>
@@ -193,7 +193,7 @@ export default function Home() {
                 <div className="absolute inset-0 w-full h-full bg-neutral-700 rounded-full" />
                 <div
                   onClick={() => toggleFilter(type as keyof typeof filters)}
-                  className={`absolute inset-0 w-18 h-18 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition ${filters[type as keyof typeof filters] ? typeToColor[type as keyof typeof filters] : "bg-neutral-600 hover:bg-neutral-500"}`}
+                  className={`absolute inset-0 w-18 h-18 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition cursor-pointer ${filters[type as keyof typeof filters] ? typeToColor[type as keyof typeof filters] : "bg-neutral-600 hover:bg-neutral-500"}`}
                 >
                   <Image
                     src={typeToImage[type as keyof typeof filters]}
@@ -210,7 +210,7 @@ export default function Home() {
               <div className="absolute inset-0 w-full h-full bg-neutral-700 rounded-full" />
               <div
                 onClick={() => toggleSort()}
-                className={`absolute inset-0 w-18 h-18 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition bg-cyan-500 hover:bg-cyan-400`}
+                className={`absolute inset-0 w-18 h-18 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition cursor-pointer bg-cyan-500 hover:bg-cyan-400`}
               >
                 <Image
                   src={sortMode == "alphabetical" ? "/svgs/alphabet.svg" : "/svgs/recent.svg"}
