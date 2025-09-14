@@ -1,5 +1,5 @@
 import { BottomBar, SectionTitle, ProjectDescription, ProjectTasks, MediaCarousel } from "@/components";
-import { projects } from "@/data/projects";
+import { projects, wipProjects } from "@/data/projects";
 
 type ProjectPageProps = {
   params: Promise<{ slug: string }>;
@@ -8,7 +8,11 @@ type ProjectPageProps = {
 export default async function Project({ params }: ProjectPageProps) {
   const { slug } = await params;
 
-  const project = projects.find((p) => p.slug === slug);
+  let project = projects.find((p) => p.slug === slug);
+
+  if (!project) {
+    project = wipProjects.find((p) => p.slug === slug);
+  }
 
   if (!project) {
     return <div className="p-8">Project not found</div>;

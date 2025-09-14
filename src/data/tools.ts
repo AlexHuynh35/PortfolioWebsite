@@ -20,21 +20,21 @@ export const softwareTools: SoftwareTools = {
             proficiency: "expert",
             subTools: ["Next.JS", "Vite"],
             imageUrl: "/svgs/react.svg",
-            projects: [["Angklung Education Website", "/project/angklung_educational_website"]],
+            projects: [["Angklung Educational Website", "/project/angklung_educational_website"], ["Video Game Recommender", "/project/video_game_recommender"]],
         },
         {
             name: "Tailwind CSS",
             proficiency: "expert",
             subTools: ["Mobile-Friendly Websites"],
             imageUrl: "/svgs/tailwind.svg",
-            projects: [["Angklung Education Website", "/project/angklung_educational_website"]],
+            projects: [["Angklung Educational Website", "/project/angklung_educational_website"], ["Video Game Recommender", "/project/video_game_recommender"]],
         },
         {
             name: "TypeScript",
             proficiency: "expert",
             subTools: [],
             imageUrl: "/svgs/typescript.svg",
-            projects: [["Angklung Education Website", "/project/angklung_educational_website"]],
+            projects: [["Angklung Educational Website", "/project/angklung_educational_website"], ["Video Game Recommender", "/project/video_game_recommender"]],
         },
     ],
     backend: [
@@ -43,7 +43,7 @@ export const softwareTools: SoftwareTools = {
             proficiency: "proficient",
             subTools: ["Flask", "Pandas", "Numpy"],
             imageUrl: "/svgs/python.svg",
-            projects: [],
+            projects: [["Video Game Recommender", "/project/video_game_recommender"]],
         },
     ],
     database: [
@@ -52,7 +52,7 @@ export const softwareTools: SoftwareTools = {
             proficiency: "beginner",
             subTools: ["Relational Database"],
             imageUrl: "/svgs/postgresql.svg",
-            projects: [],
+            projects: [["Video Game Recommender", "/project/video_game_recommender"]],
         },
     ]
 };
@@ -76,7 +76,7 @@ export const dataTools: DataTools = {
             proficiency: "proficient",
             subTools: ["PostgreSQL", "Joins", "Data Aggregation", "CTEs"],
             imageUrl: "/svgs/sql.svg",
-            projects: [],
+            projects: [["Video Game Recommender", "/project/video_game_recommender"]],
         },
     ],
     spreadsheet: [
@@ -117,7 +117,7 @@ export const gameTools: GameTools = {
             proficiency: "proficient",
             subTools: ["Object-Oriented Programming", "Software Design Patterns"],
             imageUrl: "/svgs/csharp.svg",
-            projects: [],
+            projects: [["Blocky Rain", "/project/blocky_rain"], ["Swarm2D", "/project/swarm2d"]],
         },
         {
             name: "C",
@@ -140,7 +140,7 @@ export const gameTools: GameTools = {
             proficiency: "proficient",
             subTools: ["Photon Fusion"],
             imageUrl: "/svgs/unity.svg",
-            projects: [],
+            projects: [["Blocky Rain", "/project/blocky_rain"], ["Swarm2D", "/project/swarm2d"]],
         },
         {
             name: "Construct 3",

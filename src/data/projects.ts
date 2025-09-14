@@ -121,3 +121,42 @@ export const projects: Project[] = [
     images: [],
   },
 ];
+
+export const wipProjects: Project[] = [
+  {
+    slug: "blocky_rain",
+    title: "Blocky Rain",
+    description: "Desc",
+    date: "TBD",
+    contributions: [""],
+    tools: [],
+    collaborators: [],
+    types: ["game", "software"],
+    otherUrls: [["GitHub Repo", ""]],
+    images: [],
+  },
+  {
+    slug: "swarm2d",
+    title: "Swarm2D",
+    description: "Desc",
+    date: "TBD",
+    contributions: [""],
+    tools: [],
+    collaborators: ["Jason Yu", "Timmy Tram", "Jacky Liu"],
+    types: ["software", "game"],
+    otherUrls: [],
+    images: [],
+  },
+  {
+    slug: "video_game_recommender",
+    title: "Video Game Recommender",
+    description: "Desc",
+    date: "TBD",
+    contributions: [""],
+    tools: [],
+    collaborators: [],
+    types: ["software", "data"],
+    otherUrls: [["GitHub Repo", ""]],
+    images: [],
+  },
+]

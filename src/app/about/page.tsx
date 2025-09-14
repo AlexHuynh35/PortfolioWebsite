@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Sidebar, SectionTitle, ToolShowcase } from "@/components";
+import { Sidebar, SectionTitle, ToolShowcase, ProjectGallery } from "@/components";
+import { wipProjects } from "@/data/projects";
 
 export default function About() {
   return (
@@ -86,6 +87,14 @@ export default function About() {
       </div>
 
       <ToolShowcase />
+
+      <div className="max-w-5xl mx-auto">
+        <div className="relative w-3/5 mx-auto">
+          <SectionTitle title="Current Projects" variant="B" proportion={2} type="main" />
+        </div>
+
+        <ProjectGallery projectList={wipProjects} />
+      </div>
     </section>
   );
 }

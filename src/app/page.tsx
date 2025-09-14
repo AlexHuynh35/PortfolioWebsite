@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState, useMemo } from "react";
 import { Sidebar, ProjectGallery, SectionTitle } from "@/components";
-import { projects } from "@/data/projects";
+import { projects, wipProjects } from "@/data/projects";
 
 type SortMode = "alphabetical" | "recent";
 
@@ -36,8 +36,8 @@ export default function Home() {
   };
 
   const [filters, setFilters] = useState({
-    data: true,
     software: true,
+    data: true,
     game: true,
   });
 
@@ -46,6 +46,10 @@ export default function Home() {
   };
 
   const filteredProjects = sortedProjects.filter((project) =>
+    project.types.some((t) => filters[t as keyof typeof filters])
+  );
+
+  const filteredWIPProjects = wipProjects.filter((project) =>
     project.types.some((t) => filters[t as keyof typeof filters])
   );
 
@@ -114,6 +118,14 @@ export default function Home() {
         </div>
 
         <ProjectGallery projectList={filteredProjects} />
+
+        <div className="py-10" />
+        
+        <div className="relative w-3/5 mx-auto">
+          <SectionTitle title="WIP Projects" variant="B" proportion={2} type="main" />
+        </div>
+
+        <ProjectGallery projectList={filteredWIPProjects} />
       </div>
     </section>
   );
