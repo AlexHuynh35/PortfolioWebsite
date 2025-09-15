@@ -3,15 +3,9 @@
 import { useState } from "react";
 import { ItchEmbed, TableauEmbed, SlideViewer, SectionTitle } from "@/components";
 
-type TableauInfo = {
-  url: string,
-  width: number,
-  height: number
-}
-
 type MediaCarouselProps = {
   itchUrl?: string;
-  tableauUrl?: TableauInfo;
+  tableauUrl?: string;
   images: string[];
 };
 
@@ -33,9 +27,7 @@ export default function MediaCarouselProps({ itchUrl, tableauUrl, images }: Medi
       type: "tableau",
       content: (
         <TableauEmbed
-          url={tableauUrl.url}
-          width={tableauUrl.width}
-          height={tableauUrl.height}
+          url={tableauUrl}
         />
       ),
       label: "Dashboard",

@@ -4,6 +4,6 @@ type VideoViewerProps = {
 
 export default function VideoViewer({ url }: VideoViewerProps) {
   return (
-    <div></div>
+    <div>{url}</div>
   );
 }

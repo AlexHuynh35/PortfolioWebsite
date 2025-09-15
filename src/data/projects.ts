@@ -2,12 +2,6 @@ import { ToolImageDict } from "./tools";
 
 type ProjectType = "software" | "game" | "data";
 
-type TableauInfo = {
-  url: string,
-  width: number,
-  height: number
-}
-
 export interface Project {
   slug: string;
   title: string;
@@ -19,7 +13,7 @@ export interface Project {
   types: ProjectType[];
   videoUrl?: string;
   itchUrl?: string;
-  tableauUrl?: TableauInfo;
+  tableauUrl?: string;
   otherUrls: [string, string][]
   images: string[];
 };
@@ -89,11 +83,7 @@ export const projects: Project[] = [
     tools: [ToolImageDict.excel, ToolImageDict.tableau, ToolImageDict.r],
     collaborators: ["Ronald Catahimican", "Kaila Li"],
     types: ["data"],
-    tableauUrl: {
-      url: "https://public.tableau.com/views/CreativeStrategyCampaignResults/CreativeStrategyDashboard?:showVizHome=no&:embed=true",
-      width: 808,
-      height: 635
-    },
+    tableauUrl: "https://public.tableau.com/views/CreativeStrategyCampaignResults/CreativeStrategyDashboard?:showVizHome=no&:embed=true",
     otherUrls: [["Tableau Public", ""]],
     images: ["/projects/Subscription_Campaign_Optimization_OnePager.png"],
   },
@@ -110,11 +100,7 @@ export const projects: Project[] = [
     tools: [ToolImageDict.excel, ToolImageDict.tableau, ToolImageDict.python],
     collaborators: ["Ronald Catahimican", "Kaila Li"],
     types: ["data"],
-    tableauUrl: {
-      url: "https://public.tableau.com/views/BoxOfficePerformance_17432301568260/BOPBudgetAnalysis?:showVizHome=no&:embed=true",
-      width: 1032,
-      height: 803
-    },
+    tableauUrl: "https://public.tableau.com/views/BoxOfficePerformance_17432301568260/BOPBudgetAnalysis?:showVizHome=no&:embed=true",
     otherUrls: [["Tableau Public", ""], ["GitHub Repo", ""]],
     images: ["/projects/Box_Office_Profitability_OnePager.png"],
   },

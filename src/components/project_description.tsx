@@ -5,8 +5,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { SectionTitle } from "@/components";
 
-type ProjectType = 'software' | 'game' | 'data';
-
 type ProjectDescriptionProps = {
   description: string;
   collaborators: string[];

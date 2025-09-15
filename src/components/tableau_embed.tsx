@@ -2,14 +2,9 @@ import { SectionTitle } from "@/components";
 
 type TableauEmbedProps = {
   url: string,
-  width: number,
-  height: number
 }
 
-export default function TableauEmbed({ url, width, height }: TableauEmbedProps) {
-  const maxWidth = Math.min(width, 1000)
-  const maxHeight = Math.min(height, 750)
-
+export default function TableauEmbed({ url }: TableauEmbedProps) {
   return (
     <div className="relative max-w-6xl mx-auto h-200 my-15 flex justify-center">
       <div className="absolute left-10 md:left-20 -top-20 w-80 z-10">

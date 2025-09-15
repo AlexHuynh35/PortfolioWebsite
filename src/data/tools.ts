@@ -181,4 +181,4 @@ function getAllTools(): [string, string][] {
   return Object.values(ToolImageDict);
 }
 
-export const allTools = getAllTools().map(([name, url]) => name);
+export const allTools = getAllTools().map((tool) => tool[0]);

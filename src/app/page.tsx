@@ -107,7 +107,7 @@ export default function Home() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
-  let filteredByToolsProjects = selectedTool
+  const filteredByToolsProjects = selectedTool
     ? filteredProjects.filter((project) =>
       project.tools.some(
         ([name]) => name.toLowerCase() === selectedTool.toLowerCase()
@@ -115,7 +115,7 @@ export default function Home() {
     )
     : filteredProjects;
 
-  let filteredByToolsWIPProjects = selectedTool
+  const filteredByToolsWIPProjects = selectedTool
     ? filteredWIPProjects.filter((project) =>
       project.tools.some(
         ([name]) => name.toLowerCase() === selectedTool.toLowerCase()
