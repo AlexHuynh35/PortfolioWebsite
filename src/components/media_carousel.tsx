@@ -63,7 +63,7 @@ export default function MediaCarouselProps({ itchUrl, tableauUrl, images }: Medi
 
   return (
     <div>
-      <div className="max-w-6xl mx-auto flex flex-row items-center justify-center gap-10 mt-30 mb-5 md:my-5">
+      <div className="max-w-6xl mx-auto flex flex-row items-center justify-center gap-10 mt-30 mb-5">
         {mediaSlides.length > 1 && (
           <div className="flex text-center justify-center">
             <div className="relative w-32">

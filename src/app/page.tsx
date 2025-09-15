@@ -227,7 +227,7 @@ export default function Home() {
 
         <div className="py-10" />
 
-        <div className="relative w-3/5 mx-auto">
+        <div className="relative w-4/5 mx-auto">
           <SectionTitle title="WIP Projects" variant="B" proportion={2} type="main" />
         </div>
 

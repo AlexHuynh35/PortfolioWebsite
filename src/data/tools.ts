@@ -7,6 +7,7 @@ export const ToolImageDict: Record<string, [string, string]> = {
   python: ["Python", "/svgs/python.svg"],
   postgresql: ["PostgreSQL", "/svgs/postgresql.svg"],
   sql: ["SQL", "/svgs/sql.svg"],
+  r: ["R", "/svgs/r.svg"],
   excel: ["Microsoft Excel", "/svgs/excel.svg"],
   sheets: ["Google Sheets", "/svgs/sheets.svg"],
   tableau: ["Tableau", "/svgs/tableau.svg"],
@@ -94,6 +95,13 @@ export const dataTools: DataTools = {
       subTools: ["PostgreSQL", "Joins", "Data Aggregation", "CTEs"],
       imageUrl: ToolImageDict.sql[1],
       projects: [["Video Game Recommender", "/project/video_game_recommender"]],
+    },
+    {
+      name: ToolImageDict.r[0],
+      proficiency: "proficient",
+      subTools: ["R Studio", "Hypothesis Tests", "Linear Regression"],
+      imageUrl: ToolImageDict.r[1],
+      projects: [["Subscription Campaign Optimization", "/project/subscription_campaign_optimization"]],
     },
   ],
   spreadsheet: [

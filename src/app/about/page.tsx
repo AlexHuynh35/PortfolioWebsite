@@ -28,8 +28,8 @@ export default function About() {
             </div>
           </div>
           <div className="flex flex-row items-center justify-center gap-4">
-            {socials.map((social) => (
-              <div className="relative w-20 h-20">
+            {socials.map((social, index) => (
+              <div key={index} className="relative w-20 h-20">
                 <div className="absolute inset-0 w-full h-full bg-neutral-700 rounded-full" />
                 <Link href={social.link} target="_blank" rel="noopener noreferrer" className={`block absolute inset-0 w-18 h-18 bg-cyan-500 hover:bg-cyan-400 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition`}>
                   <Image
@@ -52,9 +52,9 @@ export default function About() {
         <div className={`absolute inset-0 -m-[10px] bg-slate-300 [clip-path:polygon(0_0,100%_5%,100%_95%,0%_100%)] -z-20`} />
         <div className={`absolute inset-0 bg-slate-200 [clip-path:polygon(0_0,100%_5%,100%_95%,0%_100%)] -z-10`} />
         <div className="absolute inset-0 text-black flex justify-center items-center px-8">
-          <ul className="list-none list-inside mt-4">
-            {aboutMe.map((about) => (
-              <li className="text-xs sm:text-sm md:text-md xl:text-lg mb-4">
+          <ul className="list-none list-inside mt-8">
+            {aboutMe.map((about, index) => (
+              <li key={index} className="text-xs sm:text-sm md:text-md xl:text-lg mb-4">
                 <span className="font-semibold font-rajdhani">{about}</span>
               </li>
             ))}
