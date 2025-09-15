@@ -10,7 +10,7 @@ type ProjectTasksProps = {
 
 export default function ProjectTasks({ contributions, tools }: ProjectTasksProps) {
   return (
-    <div className="relative max-w-6xl mx-auto h-200 mt-30 mb-15">
+    <div className="relative max-w-6xl mx-auto h-220 mt-30 mb-15">
       <div className="absolute hidden md:block left-10 -top-20 w-80 z-10">
         <SectionTitle title="Tasks" variant="A" proportion={2} type="main" />
       </div>

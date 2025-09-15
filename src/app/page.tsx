@@ -155,7 +155,7 @@ export default function Home() {
                       type="text"
                       value={query}
                       onChange={handleChange}
-                      placeholder="Tool"
+                      placeholder="Tool..."
                       className="w-full text-xl text-black px-4 py-2 font-rajdhani border-0 focus:ring-0 focus:outline-none placeholder-slate-500"
                     />
                     {suggestions.length > 0 && (

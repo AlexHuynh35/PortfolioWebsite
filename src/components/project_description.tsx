@@ -15,7 +15,7 @@ export default function ProjectDescription({ description, collaborators, links }
   const [activeBox, setActiveBox] = useState<0 | 1>(0);
 
   return (
-    <div className="relative max-w-6xl mx-auto h-150 my-30">
+    <div className="relative max-w-6xl mx-auto h-170 my-30">
       <div className="absolute hidden md:block right-10 -top-20 w-80 z-10">
         <SectionTitle title="Description" variant="B" proportion={2} type="main" />
       </div>
@@ -106,10 +106,10 @@ export default function ProjectDescription({ description, collaborators, links }
             className="absolute right-0 bottom-0 w-8 h-8 hover:scale-105"
           >
             <Image
-              src="/icons/arrow.png"
+              src="/svgs/arrow.svg"
               alt="arrow"
               fill
-              className="object-contain transform scale-y-[-1] -rotate-25 filter grayscale brightness-100 opacity-70"
+              className="object-contain transform -rotate-50 filter grayscale brightness-100 opacity-70"
             />
           </div>
         )}

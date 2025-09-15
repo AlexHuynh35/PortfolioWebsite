@@ -46,7 +46,7 @@ export default function ToolShowcase() {
       <div className="absolute inset-0 bg-slate-200 [clip-path:polygon(0_5%,100%_0,100%_80%,0%_75%)] -z-30" />
       <div className="absolute inset-0 px-8">
         <div className="flex flex-col mt-30">
-          <div className="flex justify-center gap-8 mb-12">
+          <div className="flex justify-center gap-4 sm:gap-8 mb-12">
             {categories.map((cat) => (
               <div
                 key={cat}
@@ -72,12 +72,12 @@ export default function ToolShowcase() {
             {Object.entries(tools).map(([subType, toolList]) => (
               <div key={subType}>
                 <h2 className="font-bold text-sm sm:text-md md:text-lg xl:text-xl font-orbitron text-black capitalize mb-2">{subType}</h2>
-                <div className="flex justify-center gap-4">
+                <div className="flex justify-center gap-2">
                   {(toolList as Tool[]).map((tool) => (
                     <button
                       key={tool.name}
                       onClick={() => setSelectedTool(tool)}
-                      className="relative w-10 h-10 sm:w-12 sm:h-12 cursor-pointer"
+                      className="relative w-8 h-8 sm:w-12 sm:h-12 cursor-pointer"
                     >
                       <Image
                         src={tool.imageUrl}
@@ -92,13 +92,13 @@ export default function ToolShowcase() {
             ))}
           </div>
         </div>
-        <div className="absolute left-1/2 -bottom-10 transform -translate-x-1/2 w-70 h-70">
+        <div className="absolute left-1/2 -bottom-10 transform -translate-x-1/2 w-75 h-75">
           <div className="absolute inset-0 -m-[10px] bg-cyan-600 [clip-path:polygon(0_0,100%_0%,100%_100%,0_100%)] -z-20" />
           <div className="absolute inset-0 bg-cyan-500 [clip-path:polygon(0_0,100%_0%,100%_80%,80%_100%,0_100%)] flex justify-center items-center text-center -z-10">
             <h2 className={`font-bold font-orbitron text-black text-4xl p-8 ${selectedTool && "hidden"}`}>Select A Tool For More Detail</h2>
           </div>
           {selectedTool && (
-            <div className="absolute inset-0 text-black flex flex-col justify-left gap-3 px-6">
+            <div className="absolute inset-0 text-black flex flex-col justify-left gap-4 px-8">
               <div className="absolute -left-5 -bottom-2 w-35 h-12 z-10">
                 <div className="absolute inset-0 -m-[10px] bg-slate-300 [clip-path:polygon(4%_4%,96%_6%,94%_94%,6%_96%)] -z-20" />
                 <div className="absolute inset-0 bg-slate-200 [clip-path:polygon(4%_4%,96%_6%,94%_94%,6%_96%)] flex justify-center items-center text-center -z-10">
