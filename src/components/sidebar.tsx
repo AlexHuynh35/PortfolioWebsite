@@ -25,7 +25,7 @@ export default function Sidebar() {
         <div className="absolute w-58 inset-0 bg-neutral-800 [clip-path:polygon(0_0,100%_0,80%_100%,0_100%)] -z-10" />
         <div className="absolute w-60 inset-0 bg-neutral-900 [clip-path:polygon(0_85%,100%_75%,95%_100%,0_100%)] -z-20" />
         <div className="absolute w-58 inset-0 bg-neutral-800 [clip-path:polygon(0_85%,100%_75%,95%_100%,0_100%)] -z-10" />
-        <h2 className="text-xl font-orbitron font-bold mt-5 mb-6 p-6">Alex Huynh's Portfolio</h2>
+        <h2 className="text-xl font-orbitron font-bold mt-5 mb-6 p-6">Alex Huynh&apos;s Portfolio</h2>
         <nav className="flex flex-col text-center justify-center">
           <div className="relative w-full">
             <div className="absolute inset-0 bg-neutral-700 shadow-[0_4px_0_rgba(0,0,0,0.5)] [clip-path:polygon(0_20%,100%_0,90%_90%,0_100%)]" />
