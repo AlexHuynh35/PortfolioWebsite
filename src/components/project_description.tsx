@@ -24,7 +24,7 @@ export default function ProjectDescription({ description, collaborators, links }
       </div>
       <div className="absolute inset-0 -m-[10px] bg-slate-300 [clip-path:polygon(0_0,100%_5%,100%_75%,0%_80%)] -z-40" />
       <div className="absolute inset-0 bg-slate-200 flex justify-center px-8 [clip-path:polygon(0_0,100%_5%,100%_75%,0%_80%)] -z-30">
-        <h2 className={`text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-black font-orbitron font-bold mt-30`}>
+        <h2 className={`text-md sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-black font-orbitron font-bold mt-30`}>
           {description}
         </h2>
       </div>

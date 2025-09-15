@@ -105,19 +105,19 @@ export default function ToolShowcase() {
                   <h2 className="font-bold text-md text-black font-orbitron">Proficiency</h2>
                 </div>
               </div>
-              <div className="absolute right-23 -bottom-4 w-12 h-12 z-10">
+              <div className="absolute right-27 -bottom-4 w-12 h-12 z-10">
                 <div className="relative w-full h-full">
                   <div className="absolute inset-0 -m-[10px] bg-orange-600 [clip-path:polygon(50%_0%,61%_35%,98%_35%,68%_57%,79%_91%,50%_70%,21%_91%,32%_57%,2%_35%,39%_35%)]" />
                   <div className="absolute inset-0 bg-orange-500 [clip-path:polygon(50%_0%,61%_35%,98%_35%,68%_57%,79%_91%,50%_70%,21%_91%,32%_57%,2%_35%,39%_35%)]" />
                 </div>
               </div>
-              <div className="absolute right-6 -bottom-7 w-12 h-12 z-10">
+              <div className="absolute right-10 -bottom-7 w-12 h-12 z-10">
                 <div className="relative w-full h-full">
                   <div className={`absolute inset-0 -m-[10px] ${selectedTool.proficiency != "beginner" ? "bg-orange-600" : "bg-neutral-700"} [clip-path:polygon(50%_0%,61%_35%,98%_35%,68%_57%,79%_91%,50%_70%,21%_91%,32%_57%,2%_35%,39%_35%)]`} />
                   <div className={`absolute inset-0 ${selectedTool.proficiency != "beginner" ? "bg-orange-500" : "bg-neutral-600"} [clip-path:polygon(50%_0%,61%_35%,98%_35%,68%_57%,79%_91%,50%_70%,21%_91%,32%_57%,2%_35%,39%_35%)]`} />
                 </div>
               </div>
-              <div className="absolute -right-7 bottom-3 w-12 h-12 z-10">
+              <div className="absolute -right-3 bottom-3 w-12 h-12 z-10">
                 <div className="relative w-full h-full">
                   <div className={`absolute inset-0 -m-[10px] ${selectedTool.proficiency == "expert" ? "bg-orange-600" : "bg-neutral-700"} [clip-path:polygon(50%_0%,61%_35%,98%_35%,68%_57%,79%_91%,50%_70%,21%_91%,32%_57%,2%_35%,39%_35%)]`} />
                   <div className={`absolute inset-0 ${selectedTool.proficiency == "expert" ? "bg-orange-500" : "bg-neutral-600"} [clip-path:polygon(50%_0%,61%_35%,98%_35%,68%_57%,79%_91%,50%_70%,21%_91%,32%_57%,2%_35%,39%_35%)]`} />
