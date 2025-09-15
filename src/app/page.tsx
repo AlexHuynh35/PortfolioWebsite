@@ -155,7 +155,7 @@ export default function Home() {
                       type="text"
                       value={query}
                       onChange={handleChange}
-                      placeholder="Search Tools..."
+                      placeholder="Tool"
                       className="w-full text-xl text-black px-4 py-2 font-rajdhani border-0 focus:ring-0 focus:outline-none placeholder-slate-500"
                     />
                     {suggestions.length > 0 && (
@@ -188,12 +188,12 @@ export default function Home() {
             {Object.keys(filters).map((type) => (
               <div
                 key={type}
-                className="relative w-20 h-20"
+                className="relative w-18 h-18 sm:w-20 sm:h-20"
               >
                 <div className="absolute inset-0 w-full h-full bg-neutral-700 rounded-full" />
                 <div
                   onClick={() => toggleFilter(type as keyof typeof filters)}
-                  className={`absolute inset-0 w-18 h-18 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition cursor-pointer ${filters[type as keyof typeof filters] ? typeToColor[type as keyof typeof filters] : "bg-neutral-600 hover:bg-neutral-500"}`}
+                  className={`absolute inset-0 w-16 h-16 sm:w-18 sm:h-18 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition cursor-pointer ${filters[type as keyof typeof filters] ? typeToColor[type as keyof typeof filters] : "bg-neutral-600 hover:bg-neutral-500"}`}
                 >
                   <Image
                     src={typeToImage[type as keyof typeof filters]}
@@ -205,12 +205,12 @@ export default function Home() {
               </div>
             ))}
             <div
-              className="relative w-20 h-20"
+              className="relative w-18 h-18 sm:w-20 sm:h-20"
             >
               <div className="absolute inset-0 w-full h-full bg-neutral-700 rounded-full" />
               <div
                 onClick={() => toggleSort()}
-                className={`absolute inset-0 w-18 h-18 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition cursor-pointer bg-cyan-500 hover:bg-cyan-400`}
+                className={`absolute inset-0 w-16 h-16 sm:w-18 sm:h-18 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition cursor-pointer bg-cyan-500 hover:bg-cyan-400`}
               >
                 <Image
                   src={sortMode == "alphabetical" ? "/svgs/alphabet.svg" : "/svgs/recent.svg"}

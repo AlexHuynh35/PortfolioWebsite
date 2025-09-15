@@ -8,7 +8,10 @@ type SlideViewerProps = {
 export default function SlideViewer({ urls }: SlideViewerProps) {
   return (
     <div className="relative max-w-6xl mx-auto h-200 my-15 flex justify-center">
-      <div className="absolute left-10 md:left-20 -top-20 w-80 z-10">
+      <div className="absolute hidden md:block left-10 -top-20 w-80 z-10">
+        <SectionTitle title="View Deliverables!" variant="A" proportion={2} type="main" />
+      </div>
+      <div className="absolute md:hidden left-1/2 -top-20 transform -translate-x-1/2 w-64 z-10">
         <SectionTitle title="View Deliverables!" variant="A" proportion={2} type="main" />
       </div>
 

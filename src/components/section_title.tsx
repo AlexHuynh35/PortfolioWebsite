@@ -12,7 +12,7 @@ type SectionTitleProps = {
 export default function SectionTitle({ title, variant, proportion, type }: SectionTitleProps) {
   const clipPath = variant === "A" ? "[clip-path:polygon(5%_5%,95%_0,100%_100%,0_95%)]" : "[clip-path:polygon(0_0,100%_5%,95%_95%,5%_100%)]";
   const height = proportion === 1 ? "h-60" : proportion === 2 ? "h-30" : "h-20";
-  const textSize = proportion === 1 ? "text-5xl" : proportion === 2 ? "text-3xl" : "text-xl";
+  const textSize = proportion === 1 ? "text-3xl sm:text-5xl" : proportion === 2 ? "text-3xl" : "text-xl";
   const marginSize = proportion === 1 ? "my-15" : proportion === 2 ? "my-10" : "my-5";
   const textColor = type === "main" ? "text-darkbrown" : type === "sub" ? "text-black" : "text-slate-200";
   const background = type === "main" ? "bg-gold" : type === "sub" ? "bg-slate-300" : type === "software" ? "bg-indigo-600" : type === "game" ? "bg-rose-600" : "bg-emerald-600";

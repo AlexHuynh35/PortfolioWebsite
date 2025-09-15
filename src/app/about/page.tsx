@@ -29,9 +29,9 @@ export default function About() {
           </div>
           <div className="flex flex-row items-center justify-center gap-4">
             {socials.map((social, index) => (
-              <div key={index} className="relative w-20 h-20">
+              <div key={index} className="relative w-18 h-18 sm:w-20 sm:h-20">
                 <div className="absolute inset-0 w-full h-full bg-neutral-700 rounded-full" />
-                <Link href={social.link} target="_blank" rel="noopener noreferrer" className={`block absolute inset-0 w-18 h-18 bg-cyan-500 hover:bg-cyan-400 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition`}>
+                <Link href={social.link} target="_blank" rel="noopener noreferrer" className={`block absolute inset-0 w-16 h-16 sm:w-18 sm:h-18 bg-cyan-500 hover:bg-cyan-400 rounded-full translate-x-1 transform translate-y-0 transition-transform active:translate-y-1 transition`}>
                   <Image
                     src={social.imageUrl}
                     alt={social.name}
@@ -45,8 +45,11 @@ export default function About() {
         </div>
       </div>
 
-      <div className="relative max-w-5xl mx-auto h-120 my-30">
-        <div className="absolute right-10 -top-15 w-80 z-10">
+      <div className="relative max-w-5xl mx-auto h-150 my-30">
+        <div className="absolute hidden md:block right-10 -top-15 w-80 z-10">
+          <SectionTitle title="About Me" variant="B" proportion={3} type="main" />
+        </div>
+        <div className="absolute md:hidden left-1/2 -top-20 transform -translate-x-1/2 w-64 z-10">
           <SectionTitle title="About Me" variant="B" proportion={3} type="main" />
         </div>
         <div className={`absolute inset-0 -m-[10px] bg-slate-300 [clip-path:polygon(0_0,100%_5%,100%_95%,0%_100%)] -z-20`} />
@@ -54,7 +57,7 @@ export default function About() {
         <div className="absolute inset-0 text-black flex justify-center items-center px-8">
           <ul className="list-none list-inside mt-8">
             {aboutMe.map((about, index) => (
-              <li key={index} className="text-xs sm:text-sm md:text-md xl:text-lg mb-4">
+              <li key={index} className="text-xs sm:text-md md:text-lg xl:text-xl mb-4">
                 <span className="font-semibold font-rajdhani">{about}</span>
               </li>
             ))}
