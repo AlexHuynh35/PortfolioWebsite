@@ -1,8 +1,14 @@
 # Alex Huynh's Portfolio Website
 
+**Live Site**: https://alex-huynh-portfolio.vercel.app/
+
+---
+
 ## Project Summary
 
 This is the source code repository for my personal portfolio website. This site serves as a central hub to showcase my work in **Software Engineering**, **Game Development**, and **Data Science**, highlighting projects that span my diverse technical interests and creative endeavors.
+
+This project is completed, with more additions to be added in the future.
 
 ---
 
@@ -10,21 +16,21 @@ This is the source code repository for my personal portfolio website. This site 
 
 ### About Page
 - A professional overview including:
-  - Profile picture and short bio
-  - Summary of technical experience
+  - Profile picture and social links
   - Personal interests and background
+  - Summary of my technical skillset
   - Highlights of selected projects
 
 ### Project Listing Page
 - A comprehensive, searchable, and filterable list of all past and current projects
 - Includes:
-  - **Search Bar**: by project title or description
+  - **Search Bar**: by tools used
   - **Filter Options**: by project type (Software Engineering, Game Development, Data Science)
-  - **Sorting Controls**: by date (newest/oldest) or name (A–Z/Z–A)
-  - **Project Preview**:
-    - Title and image
+  - **Sorting Control**: by date or name
+  - **Project Previews**:
+    - Title
+    - Date
     - Project type
-    - Short description
 
 ### Individual Project Pages
 - Each project preview links to its own dedicated page with:
@@ -53,46 +59,41 @@ This is the source code repository for my personal portfolio website. This site 
 
 ## Design Notes
 
-- **Color Palette**:  
-  A clean and modern palette for readability and creativity:
-  - Primary: `#1f2937` (Slate Gray)
+- **Color Palette**:
+  - Primary: Slate/Neutral Gray
   - Accents:
-    - Software Engineering: `#6366F1` (Indigo)
-    - Game Development: `#F43F5E` (Rose)
-    - Data Science: `#10b981` (Emerald)
-  - Background: `#f9fafb` (Off White)
-  - Text: `#111827` (Charcoal Black)
+    - Headers: Parchment
+    - Other: Cyan, Orange
+  - Projects:
+    - Software Engineering: Indigo
+    - Game Development: Rose
+    - Data Science: Emerald
 
 - **Typography**:
-  - Header: Bold, modern sans-serif (e.g., Inter, Montserrat)
-  - Body: Clean and legible serif or sans-serif (e.g., Lato, Roboto)
+  - Primary: Orbitron
+  - Secondary: Rajdhani
 
 - **Mobile Friendliness**:
-  - Fully responsive with mobile-first design
+  - Fully responsive mobile-friendly design
   - Optimized layout for smaller screens: collapsible nav, stacked content blocks
 
 - **Interactivity**:
-  - Smooth page transitions and hover effects
-  - Accessible with semantic HTML and keyboard navigation
+  - Hover effects
+  - Realistic buttons
+
+- **Design Inspiration**:
+  - Persona's irregularly shaped UI
+  - Pokemon-inspired project dex
 
 ---
 
 ## Future Additions
 
+- **Project Updates**
+  - Additional details in projects
+  - More projects will be added as they are completed
+
 - **Blog Section**
   - Devlog-style posts announcing game builds, demos, and releases
   - Reflections on project challenges, lessons learned, and future plans
-
-- **Contact Form / Email Integration**
-  - Let users easily reach out for collaborations or freelance opportunities
-
-- **Advanced Filtering**
-  - Tag-based filtering (e.g., Python, Unity, Tableau) across all project types
-
----
-
-## Status
-
-**Actively in development**
-- First release targeted: September 1st, 2025
-- Check back for live demo and updates!
+  - Short tutorials on skills gained during projects
